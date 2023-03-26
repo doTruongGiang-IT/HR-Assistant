@@ -33,6 +33,37 @@
     },
     {
       "Package": {
+        "Id": "UiPath.Form.Activities",
+        "Version": "2.0.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\h.formatters\\2.0.35\\lib/netstandard2.0/H.Formatters.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\h.formatters.binaryformatter\\2.0.35\\lib/netstandard2.0/H.Formatters.BinaryFormatter.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\h.pipes\\2.0.35\\lib/net6.0/H.Pipes.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0-2.22527.10\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.codeanalysis.csharp.scripting\\3.8.0\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.Scripting.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.codeanalysis.scripting.common\\3.8.0\\lib/netcoreapp3.1/Microsoft.CodeAnalysis.Scripting.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\lib/netcoreapp3.0/Microsoft.Web.WebView2.Core.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\lib/netcoreapp3.0/Microsoft.Web.WebView2.WinForms.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\lib/netcoreapp3.0/Microsoft.Web.WebView2.Wpf.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/netstandard2.0/Newtonsoft.Json.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\reflectionmagic\\4.1.0\\lib/netstandard2.0/ReflectionMagic.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.componentmodel.composition\\5.0.0\\lib/netcoreapp2.0/System.ComponentModel.Composition.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities\\2.0.3\\lib/net5.0-windows7.0/UiPath.Form.Activities.Design.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities\\2.0.3\\lib/net5.0-windows7.0/UiPath.Form.Activities.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.3\\lib/net5.0-windows7.0/UiPath.Form.ActivityLibrary.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.3\\lib/net5.0-windows7.0/UiPath.Form.Host.Local.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.3\\lib/net5.0-windows7.0/UiPath.Form.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.3\\lib/net5.0-windows7.0/UiPath.OutOfProcessUi.Common.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary.contracts\\2.0.3\\lib/net5.0-windows7.0/UiPath.Form.ActivityLibrary.Contracts.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/netstandard2.0/TelemetryClient.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities\\2.0.3"
+    },
+    {
+      "Package": {
         "Id": "UiPath.Mail.Activities",
         "Version": "1.18.2"
       },
@@ -47,7 +78,7 @@
         "C:\\Users\\DELL\\.nuget\\packages\\google.apis.peopleservice.v1\\1.55.0.2567\\lib/netstandard2.0/Google.Apis.PeopleService.v1.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\htmlagilitypack\\1.11.38\\lib/netstandard2.0/HtmlAgilityPack.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\mailkit\\3.1.1\\lib/net6.0/MailKit.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\microsoft.graph\\4.11.0\\lib/netstandard2.0/Microsoft.Graph.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\microsoft.graph.core\\2.0.5\\lib/netstandard2.0/Microsoft.Graph.Core.dll",
@@ -73,7 +104,7 @@
         "C:\\Users\\DELL\\.nuget\\packages\\system.memory.data\\1.0.2\\lib/netstandard2.0/System.Memory.Data.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\system.runtime.caching\\5.0.0\\runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\lib/net5.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll",
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.connectionclient\\1.4.1\\lib/net5.0/ConnectionClient.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.connectionclient\\1.4.2-20221020.8\\lib/net5.0/ConnectionClient.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.mail.activities\\1.18.2\\lib/net6.0-windows7.0/Interop.Domino.UiPath.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.mail.activities\\1.18.2\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Outlook.dll",
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.mail.activities\\1.18.2\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Word.dll",
@@ -249,9 +280,94 @@
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.webapi.activities\\1.13.3\\lib/net5.0-windows7.0/UiPath.Web.dll"
       ],
       "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.webapi.activities\\1.13.3"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.GSuite.Activities",
+        "Version": "2.0.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\google.apis\\1.55.0\\lib/netstandard2.0/Google.Apis.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/netstandard2.0/Google.Apis.Auth.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\google.apis.calendar.v3\\1.55.0.2554\\lib/netstandard2.0/Google.Apis.Calendar.v3.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\google.apis.core\\1.55.0\\lib/netstandard2.0/Google.Apis.Core.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\google.apis.docs.v1\\1.55.0.2379\\lib/netstandard2.0/Google.Apis.Docs.v1.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\google.apis.drive.v3\\1.55.0.2566\\lib/netstandard2.0/Google.Apis.Drive.v3.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\google.apis.gmail.v1\\1.55.0.2510\\lib/netstandard2.0/Google.Apis.Gmail.v1.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\google.apis.peopleservice.v1\\1.55.0.2567\\lib/netstandard2.0/Google.Apis.PeopleService.v1.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\google.apis.script.v1\\1.55.0.2555\\lib/netstandard2.0/Google.Apis.Script.v1.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\google.apis.sheets.v4\\1.55.0.2371\\lib/netstandard2.0/Google.Apis.Sheets.v4.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\mimekit\\3.1.1\\lib/net6.0/MimeKit.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib/netstandard2.0/Newtonsoft.Json.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\nito.asyncex.context\\5.1.0\\lib/netstandard2.0/Nito.AsyncEx.Context.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\nito.asyncex.coordination\\5.1.0\\lib/netstandard2.0/Nito.AsyncEx.Coordination.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\nito.asyncex.interop.waithandles\\5.1.0\\lib/netstandard2.0/Nito.AsyncEx.Interop.WaitHandles.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\nito.asyncex.oop\\5.1.0\\lib/netstandard2.0/Nito.AsyncEx.Oop.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\nito.asyncex.tasks\\5.1.0\\lib/netstandard2.0/Nito.AsyncEx.Tasks.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\nito.cancellation\\1.1.0\\lib/netstandard2.0/Nito.Cancellation.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\nito.collections.deque\\1.1.0\\lib/netstandard2.0/Nito.Collections.Deque.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\nito.disposables\\2.2.0\\lib/netstandard2.1/Nito.Disposables.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\nodatime\\2.4.7\\lib/netstandard2.0/NodaTime.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\lib/netstandard2.0/BouncyCastle.Crypto.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.activities.viewmodels\\1.0.0-20230126.4\\lib/net5.0-windows7.0/System.Activities.ViewModels.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.linq.async\\5.0.0\\lib/netcoreapp3.1/System.Linq.Async.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.linq.async.queryable\\5.0.0\\lib/netcoreapp3.1/System.Linq.Async.Queryable.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\system.runtime.caching\\5.0.0\\runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\lib/net5.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.connectionclient\\1.4.2-20221020.8\\lib/net5.0/ConnectionClient.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.gsuite.activities\\2.0.3\\lib/net6.0-windows7.0/UiPath.GSuite.Activities.Design.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.gsuite.activities\\2.0.3\\lib/net6.0-windows7.0/UiPath.GSuite.Activities.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.gsuite.activities\\2.0.3\\lib/net6.0-windows7.0/UiPath.GSuite.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.gsuite.activities\\2.0.3\\lib/net6.0-windows7.0/UiPath.Orchestrator.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.platform\\23.2.0-preview\\lib/net6.0-windows7.0/UiPath.Platform.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/netstandard2.0/TelemetryClient.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.gsuite.activities\\2.0.3"
     }
   ],
-  "Conflicts": [],
+  "Conflicts": [
+    {
+      "AffectedPackages": [
+        {
+          "Id": "Microsoft.CodeAnalysis.CSharp.Scripting",
+          "Version": "3.8.0"
+        },
+        {
+          "Id": "UiPath.System.Activities",
+          "Version": "23.2.0-preview"
+        }
+      ],
+      "CausingPackage": {
+        "Id": "Microsoft.CodeAnalysis.Common",
+        "Version": "4.5.0-2.22527.10"
+      },
+      "IsCycle": false,
+      "IsDowngrade": false,
+      "IsConflict": true
+    },
+    {
+      "AffectedPackages": [
+        {
+          "Id": "Microsoft.CodeAnalysis.CSharp.Scripting",
+          "Version": "3.8.0"
+        },
+        {
+          "Id": "UiPath.System.Activities",
+          "Version": "23.2.0-preview"
+        }
+      ],
+      "CausingPackage": {
+        "Id": "Microsoft.CodeAnalysis.CSharp",
+        "Version": "4.5.0-2.22527.10"
+      },
+      "IsCycle": false,
+      "IsDowngrade": false,
+      "IsConflict": true
+    }
+  ],
   "ResolvedDependencies": {
     "AutoMapper": {
       "Id": "AutoMapper",
@@ -409,6 +525,34 @@
         }
       ]
     },
+    "Google.Apis.Docs.v1": {
+      "Id": "Google.Apis.Docs.v1",
+      "Version": "1.55.0.2379",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.55.0, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.55.0, )"
+        }
+      ]
+    },
+    "Google.Apis.Drive.v3": {
+      "Id": "Google.Apis.Drive.v3",
+      "Version": "1.55.0.2566",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.55.0, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.55.0, )"
+        }
+      ]
+    },
     "Google.Apis.Gmail.v1": {
       "Id": "Google.Apis.Gmail.v1",
       "Version": "1.55.0.2510",
@@ -434,6 +578,59 @@
         {
           "Item1": "Google.Apis.Auth",
           "Item2": "[1.55.0, )"
+        }
+      ]
+    },
+    "Google.Apis.Script.v1": {
+      "Id": "Google.Apis.Script.v1",
+      "Version": "1.55.0.2555",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.55.0, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.55.0, )"
+        }
+      ]
+    },
+    "Google.Apis.Sheets.v4": {
+      "Id": "Google.Apis.Sheets.v4",
+      "Version": "1.55.0.2371",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.55.0, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.55.0, )"
+        }
+      ]
+    },
+    "H.Formatters": {
+      "Id": "H.Formatters",
+      "Version": "2.0.35",
+      "Dependencies": []
+    },
+    "H.Formatters.BinaryFormatter": {
+      "Id": "H.Formatters.BinaryFormatter",
+      "Version": "2.0.35",
+      "Dependencies": [
+        {
+          "Item1": "H.Formatters",
+          "Item2": "[2.0.35, )"
+        }
+      ]
+    },
+    "H.Pipes": {
+      "Id": "H.Pipes",
+      "Version": "2.0.35",
+      "Dependencies": [
+        {
+          "Item1": "H.Formatters.BinaryFormatter",
+          "Item2": "[2.0.35, )"
         }
       ]
     },
@@ -625,7 +822,7 @@
     },
     "Microsoft.Bcl.AsyncInterfaces": {
       "Id": "Microsoft.Bcl.AsyncInterfaces",
-      "Version": "1.0.0",
+      "Version": "5.0.0",
       "Dependencies": []
     },
     "Microsoft.CodeAnalysis.Analyzers": {
@@ -674,6 +871,38 @@
         {
           "Item1": "Microsoft.CodeAnalysis.Common",
           "Item2": "[4.5.0-2.22527.10, 4.5.0-2.22527.10]"
+        }
+      ]
+    },
+    "Microsoft.CodeAnalysis.CSharp.Scripting": {
+      "Id": "Microsoft.CodeAnalysis.CSharp.Scripting",
+      "Version": "3.8.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.CodeAnalysis.Common",
+          "Item2": "[3.8.0, 3.8.0]"
+        },
+        {
+          "Item1": "Microsoft.CodeAnalysis.CSharp",
+          "Item2": "[3.8.0, 3.8.0]"
+        },
+        {
+          "Item1": "Microsoft.CodeAnalysis.Scripting.Common",
+          "Item2": "[3.8.0, 3.8.0]"
+        },
+        {
+          "Item1": "Microsoft.CSharp",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "Microsoft.CodeAnalysis.Scripting.Common": {
+      "Id": "Microsoft.CodeAnalysis.Scripting.Common",
+      "Version": "3.8.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.CodeAnalysis.Common",
+          "Item2": "[3.8.0, 3.8.0]"
         }
       ]
     },
@@ -1168,6 +1397,11 @@
     "Microsoft.VisualStudio.OLE.Interop": {
       "Id": "Microsoft.VisualStudio.OLE.Interop",
       "Version": "16.7.30328.74",
+      "Dependencies": []
+    },
+    "Microsoft.Web.WebView2": {
+      "Id": "Microsoft.Web.WebView2",
+      "Version": "1.0.1264.42",
       "Dependencies": []
     },
     "Microsoft.Win32.Primitives": {
@@ -1766,6 +2000,11 @@
       "Version": "4.5.11",
       "Dependencies": []
     },
+    "NodaTime": {
+      "Id": "NodaTime",
+      "Version": "2.4.7",
+      "Dependencies": []
+    },
     "NPOI": {
       "Id": "NPOI",
       "Version": "2.5.5",
@@ -1797,6 +2036,16 @@
       "Id": "Portable.BouncyCastle",
       "Version": "1.9.0",
       "Dependencies": []
+    },
+    "ReflectionMagic": {
+      "Id": "ReflectionMagic",
+      "Version": "4.1.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.CSharp",
+          "Item2": "[4.4.1, )"
+        }
+      ]
     },
     "RestSharp": {
       "Id": "RestSharp",
@@ -2791,6 +3040,21 @@
         }
       ]
     },
+    "System.Linq.Async": {
+      "Id": "System.Linq.Async",
+      "Version": "5.0.0",
+      "Dependencies": []
+    },
+    "System.Linq.Async.Queryable": {
+      "Id": "System.Linq.Async.Queryable",
+      "Version": "5.0.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Linq.Async",
+          "Item2": "[5.0.0, )"
+        }
+      ]
+    },
     "System.Linq.Expressions": {
       "Id": "System.Linq.Expressions",
       "Version": "4.3.0",
@@ -3293,6 +3557,11 @@
           "Item2": "[4.3.0, )"
         }
       ]
+    },
+    "System.Resources.Extensions": {
+      "Id": "System.Resources.Extensions",
+      "Version": "5.0.0",
+      "Dependencies": []
     },
     "System.Resources.ResourceManager": {
       "Id": "System.Resources.ResourceManager",
@@ -4359,7 +4628,7 @@
     },
     "UiPath.ConnectionClient": {
       "Id": "UiPath.ConnectionClient",
-      "Version": "1.4.1",
+      "Version": "1.4.2-20221020.8",
       "Dependencies": [
         {
           "Item1": "Newtonsoft.Json",
@@ -4418,6 +4687,186 @@
         {
           "Item1": "UiPath.Platform",
           "Item2": "[22.4.0, )"
+        },
+        {
+          "Item1": "UiPath.Telemetry.Client",
+          "Item2": "[1.5.3, )"
+        }
+      ]
+    },
+    "UiPath.Form.Activities": {
+      "Id": "UiPath.Form.Activities",
+      "Version": "2.0.3",
+      "Dependencies": [
+        {
+          "Item1": "H.Pipes",
+          "Item2": "[2.0.35, )"
+        },
+        {
+          "Item1": "Microsoft.CodeAnalysis.CSharp.Scripting",
+          "Item2": "[3.8.0, )"
+        },
+        {
+          "Item1": "Microsoft.Web.WebView2",
+          "Item2": "[1.0.1264.42, )"
+        },
+        {
+          "Item1": "ReflectionMagic",
+          "Item2": "[4.1.0, )"
+        },
+        {
+          "Item1": "System.ComponentModel.Composition",
+          "Item2": "[4.7.0, )"
+        },
+        {
+          "Item1": "System.IO.Abstractions",
+          "Item2": "[3.0.10, )"
+        },
+        {
+          "Item1": "System.Resources.Extensions",
+          "Item2": "[5.0.0, )"
+        },
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.7.1, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks.Extensions",
+          "Item2": "[4.5.4, )"
+        },
+        {
+          "Item1": "UiPath.FormActivityLibrary",
+          "Item2": "[2.0.3, )"
+        },
+        {
+          "Item1": "UiPath.Telemetry.Client",
+          "Item2": "[1.3.18, )"
+        }
+      ]
+    },
+    "UiPath.FormActivityLibrary": {
+      "Id": "UiPath.FormActivityLibrary",
+      "Version": "2.0.3",
+      "Dependencies": [
+        {
+          "Item1": "H.Pipes",
+          "Item2": "[2.0.35, )"
+        },
+        {
+          "Item1": "Microsoft.Web.WebView2",
+          "Item2": "[1.0.1264.42, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        },
+        {
+          "Item1": "System.Drawing.Common",
+          "Item2": "[5.0.2, )"
+        },
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.7.1, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "UiPath.FormActivityLibrary.Contracts",
+          "Item2": "[2.0.3, )"
+        },
+        {
+          "Item1": "UiPath.WebView2.Runtime.x64",
+          "Item2": "[0.1.0, )"
+        }
+      ]
+    },
+    "UiPath.FormActivityLibrary.Contracts": {
+      "Id": "UiPath.FormActivityLibrary.Contracts",
+      "Version": "2.0.3",
+      "Dependencies": [
+        {
+          "Item1": "System.Resources.Extensions",
+          "Item2": "[5.0.0, )"
+        }
+      ]
+    },
+    "UiPath.GSuite.Activities": {
+      "Id": "UiPath.GSuite.Activities",
+      "Version": "2.0.3",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis.Calendar.v3",
+          "Item2": "[1.55.0.2554, )"
+        },
+        {
+          "Item1": "Google.Apis.Docs.v1",
+          "Item2": "[1.55.0.2379, )"
+        },
+        {
+          "Item1": "Google.Apis.Drive.v3",
+          "Item2": "[1.55.0.2566, )"
+        },
+        {
+          "Item1": "Google.Apis.Gmail.v1",
+          "Item2": "[1.55.0.2510, )"
+        },
+        {
+          "Item1": "Google.Apis.PeopleService.v1",
+          "Item2": "[1.55.0.2567, )"
+        },
+        {
+          "Item1": "Google.Apis.Script.v1",
+          "Item2": "[1.55.0.2555, )"
+        },
+        {
+          "Item1": "Google.Apis.Sheets.v4",
+          "Item2": "[1.55.0.2371, )"
+        },
+        {
+          "Item1": "Microsoft.Bcl.AsyncInterfaces",
+          "Item2": "[5.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Win32.Registry",
+          "Item2": "[5.0.0, )"
+        },
+        {
+          "Item1": "MimeKit",
+          "Item2": "[2.10.0, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[13.0.1, )"
+        },
+        {
+          "Item1": "NodaTime",
+          "Item2": "[2.4.7, )"
+        },
+        {
+          "Item1": "System.Activities.ViewModels",
+          "Item2": "[1.0.0-20221115.1, )"
+        },
+        {
+          "Item1": "System.Linq.Async.Queryable",
+          "Item2": "[5.0.0, )"
+        },
+        {
+          "Item1": "System.Security.Cryptography.ProtectedData",
+          "Item2": "[5.0.0, )"
+        },
+        {
+          "Item1": "UiPath.Activities.RuntimeGovernance",
+          "Item2": "[1.1.6, )"
+        },
+        {
+          "Item1": "UiPath.ConnectionClient",
+          "Item2": "[1.4.2-20221020.8, )"
+        },
+        {
+          "Item1": "UiPath.Platform",
+          "Item2": "[23.1.0, )"
         },
         {
           "Item1": "UiPath.Telemetry.Client",
@@ -4865,6 +5314,11 @@
           "Item2": "[22.10.2, )"
         }
       ]
+    },
+    "UiPath.WebView2.Runtime.x64": {
+      "Id": "UiPath.WebView2.Runtime.x64",
+      "Version": "0.1.0",
+      "Dependencies": []
     }
   },
   "AllPackages": [
@@ -4981,6 +5435,26 @@
     },
     {
       "Package": {
+        "Id": "Google.Apis.Docs.v1",
+        "Version": "1.55.0.2379"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\google.apis.docs.v1\\1.55.0.2379\\lib\\netstandard2.0\\Google.Apis.Docs.v1.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\google.apis.docs.v1\\1.55.0.2379"
+    },
+    {
+      "Package": {
+        "Id": "Google.Apis.Drive.v3",
+        "Version": "1.55.0.2566"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\google.apis.drive.v3\\1.55.0.2566\\lib\\netstandard2.0\\Google.Apis.Drive.v3.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\google.apis.drive.v3\\1.55.0.2566"
+    },
+    {
+      "Package": {
         "Id": "Google.Apis.Gmail.v1",
         "Version": "1.55.0.2510"
       },
@@ -4998,6 +5472,56 @@
         "C:\\Users\\DELL\\.nuget\\packages\\google.apis.peopleservice.v1\\1.55.0.2567\\lib\\netstandard2.0\\Google.Apis.PeopleService.v1.dll"
       ],
       "Path": "C:\\Users\\DELL\\.nuget\\packages\\google.apis.peopleservice.v1\\1.55.0.2567"
+    },
+    {
+      "Package": {
+        "Id": "Google.Apis.Script.v1",
+        "Version": "1.55.0.2555"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\google.apis.script.v1\\1.55.0.2555\\lib\\netstandard2.0\\Google.Apis.Script.v1.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\google.apis.script.v1\\1.55.0.2555"
+    },
+    {
+      "Package": {
+        "Id": "Google.Apis.Sheets.v4",
+        "Version": "1.55.0.2371"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\google.apis.sheets.v4\\1.55.0.2371\\lib\\netstandard2.0\\Google.Apis.Sheets.v4.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\google.apis.sheets.v4\\1.55.0.2371"
+    },
+    {
+      "Package": {
+        "Id": "H.Formatters",
+        "Version": "2.0.35"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\h.formatters\\2.0.35\\lib\\netstandard2.0\\H.Formatters.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\h.formatters\\2.0.35"
+    },
+    {
+      "Package": {
+        "Id": "H.Formatters.BinaryFormatter",
+        "Version": "2.0.35"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\h.formatters.binaryformatter\\2.0.35\\lib\\netstandard2.0\\H.Formatters.BinaryFormatter.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\h.formatters.binaryformatter\\2.0.35"
+    },
+    {
+      "Package": {
+        "Id": "H.Pipes",
+        "Version": "2.0.35"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\h.pipes\\2.0.35\\lib\\net6.0\\H.Pipes.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\h.pipes\\2.0.35"
     },
     {
       "Package": {
@@ -5142,12 +5666,12 @@
     {
       "Package": {
         "Id": "Microsoft.Bcl.AsyncInterfaces",
-        "Version": "1.0.0"
+        "Version": "5.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\lib\\netstandard2.1\\Microsoft.Bcl.AsyncInterfaces.dll"
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\lib\\netstandard2.1\\Microsoft.Bcl.AsyncInterfaces.dll"
       ],
-      "Path": "C:\\Users\\DELL\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0"
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0"
     },
     {
       "Package": {
@@ -5176,6 +5700,26 @@
         "C:\\Users\\DELL\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0-2.22527.10\\lib\\netcoreapp3.1\\Microsoft.CodeAnalysis.CSharp.dll"
       ],
       "Path": "C:\\Users\\DELL\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0-2.22527.10"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.CodeAnalysis.CSharp.Scripting",
+        "Version": "3.8.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.codeanalysis.csharp.scripting\\3.8.0\\lib\\netcoreapp3.1\\Microsoft.CodeAnalysis.CSharp.Scripting.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\microsoft.codeanalysis.csharp.scripting\\3.8.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.CodeAnalysis.Scripting.Common",
+        "Version": "3.8.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.codeanalysis.scripting.common\\3.8.0\\lib\\netcoreapp3.1\\Microsoft.CodeAnalysis.Scripting.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\microsoft.codeanalysis.scripting.common\\3.8.0"
     },
     {
       "Package": {
@@ -5553,6 +6097,18 @@
     },
     {
       "Package": {
+        "Id": "Microsoft.Web.WebView2",
+        "Version": "1.0.1264.42"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\lib\\netcoreapp3.0\\Microsoft.Web.WebView2.Core.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\lib\\netcoreapp3.0\\Microsoft.Web.WebView2.WinForms.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\lib\\netcoreapp3.0\\Microsoft.Web.WebView2.Wpf.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42"
+    },
+    {
+      "Package": {
         "Id": "Microsoft.Win32.Primitives",
         "Version": "4.3.0"
       },
@@ -5761,6 +6317,16 @@
     },
     {
       "Package": {
+        "Id": "NodaTime",
+        "Version": "2.4.7"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\nodatime\\2.4.7\\lib\\netstandard2.0\\NodaTime.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\nodatime\\2.4.7"
+    },
+    {
+      "Package": {
         "Id": "NPOI",
         "Version": "2.5.5"
       },
@@ -5791,6 +6357,16 @@
         "C:\\Users\\DELL\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\lib\\netstandard2.0\\BouncyCastle.Crypto.dll"
       ],
       "Path": "C:\\Users\\DELL\\.nuget\\packages\\portable.bouncycastle\\1.9.0"
+    },
+    {
+      "Package": {
+        "Id": "ReflectionMagic",
+        "Version": "4.1.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\reflectionmagic\\4.1.0\\lib\\netstandard2.0\\ReflectionMagic.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\reflectionmagic\\4.1.0"
     },
     {
       "Package": {
@@ -6422,6 +6998,26 @@
     },
     {
       "Package": {
+        "Id": "System.Linq.Async",
+        "Version": "5.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\system.linq.async\\5.0.0\\lib\\netcoreapp3.1\\System.Linq.Async.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\system.linq.async\\5.0.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Linq.Async.Queryable",
+        "Version": "5.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\system.linq.async.queryable\\5.0.0\\lib\\netcoreapp3.1\\System.Linq.Async.Queryable.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\system.linq.async.queryable\\5.0.0"
+    },
+    {
+      "Package": {
         "Id": "System.Linq.Expressions",
         "Version": "4.3.0"
       },
@@ -6625,6 +7221,16 @@
         "C:\\Users\\DELL\\.nuget\\packages\\system.reflection.typeextensions\\4.3.0\\lib\\netstandard1.5\\System.Reflection.TypeExtensions.dll"
       ],
       "Path": "C:\\Users\\DELL\\.nuget\\packages\\system.reflection.typeextensions\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Resources.Extensions",
+        "Version": "5.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\system.resources.extensions\\5.0.0\\lib\\netstandard2.0\\System.Resources.Extensions.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\system.resources.extensions\\5.0.0"
     },
     {
       "Package": {
@@ -7114,12 +7720,12 @@
     {
       "Package": {
         "Id": "UiPath.ConnectionClient",
-        "Version": "1.4.1"
+        "Version": "1.4.2-20221020.8"
       },
       "Assemblies": [
-        "C:\\Users\\DELL\\.nuget\\packages\\uipath.connectionclient\\1.4.1\\lib\\net5.0\\ConnectionClient.dll"
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.connectionclient\\1.4.2-20221020.8\\lib\\net5.0\\ConnectionClient.dll"
       ],
-      "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.connectionclient\\1.4.1"
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.connectionclient\\1.4.2-20221020.8"
     },
     {
       "Package": {
@@ -7136,6 +7742,53 @@
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.excel.activities\\2.18.0-preview\\lib\\net5.0-windows7.0\\UiPath.Excel.dll"
       ],
       "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.excel.activities\\2.18.0-preview"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Form.Activities",
+        "Version": "2.0.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities\\2.0.3\\lib\\net5.0-windows7.0\\UiPath.Form.Activities.Design.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities\\2.0.3\\lib\\net5.0-windows7.0\\UiPath.Form.Activities.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities\\2.0.3"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.FormActivityLibrary",
+        "Version": "2.0.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.3\\lib\\net5.0-windows7.0\\UiPath.Form.ActivityLibrary.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.3\\lib\\net5.0-windows7.0\\UiPath.Form.Host.Local.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.3\\lib\\net5.0-windows7.0\\UiPath.Form.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.3\\lib\\net5.0-windows7.0\\UiPath.OutOfProcessUi.Common.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.3"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.FormActivityLibrary.Contracts",
+        "Version": "2.0.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary.contracts\\2.0.3\\lib\\net5.0-windows7.0\\UiPath.Form.ActivityLibrary.Contracts.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary.contracts\\2.0.3"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.GSuite.Activities",
+        "Version": "2.0.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.gsuite.activities\\2.0.3\\lib\\net6.0-windows7.0\\UiPath.GSuite.Activities.Design.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.gsuite.activities\\2.0.3\\lib\\net6.0-windows7.0\\UiPath.GSuite.Activities.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.gsuite.activities\\2.0.3\\lib\\net6.0-windows7.0\\UiPath.GSuite.dll",
+        "C:\\Users\\DELL\\.nuget\\packages\\uipath.gsuite.activities\\2.0.3\\lib\\net6.0-windows7.0\\UiPath.Orchestrator.dll"
+      ],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.gsuite.activities\\2.0.3"
     },
     {
       "Package": {
@@ -7296,6 +7949,14 @@
         "C:\\Users\\DELL\\.nuget\\packages\\uipath.webapi.activities\\1.13.3\\lib\\net5.0-windows7.0\\UiPath.Web.dll"
       ],
       "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.webapi.activities\\1.13.3"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.WebView2.Runtime.x64",
+        "Version": "0.1.0"
+      },
+      "Assemblies": [],
+      "Path": "C:\\Users\\DELL\\.nuget\\packages\\uipath.webview2.runtime.x64\\0.1.0"
     }
   ]
 }

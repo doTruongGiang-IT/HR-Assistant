@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "bhOIWTOl4UpjU+Fpdj+UW+R8SNfruRyMtVEspNtNfAYTo3fQ/Q5uIYeCKW8HQt+FW0q4LdJoWjBX6GtOvhTcUA==",
-  "success": true,
+  "dgSpecHash": "hcbMwHICkl/shQn/W+37BWMVvnhB0NL2Oe8guOd3YjmS2zA/M4tHD+QGa7D/q2JYTaN9IiDfOBzvcFbZEeyp6A==",
+  "success": false,
   "projectFilePath": "C:\\Users\\DELL\\OneDrive\\Tài liệu\\UiPath\\HR_Assistant\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
@@ -15,8 +15,15 @@
     "C:\\Users\\DELL\\.nuget\\packages\\google.apis.auth\\1.55.0\\google.apis.auth.1.55.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\google.apis.calendar.v3\\1.55.0.2554\\google.apis.calendar.v3.1.55.0.2554.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\google.apis.core\\1.55.0\\google.apis.core.1.55.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\google.apis.docs.v1\\1.55.0.2379\\google.apis.docs.v1.1.55.0.2379.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\google.apis.drive.v3\\1.55.0.2566\\google.apis.drive.v3.1.55.0.2566.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\google.apis.gmail.v1\\1.55.0.2510\\google.apis.gmail.v1.1.55.0.2510.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\google.apis.peopleservice.v1\\1.55.0.2567\\google.apis.peopleservice.v1.1.55.0.2567.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\google.apis.script.v1\\1.55.0.2555\\google.apis.script.v1.1.55.0.2555.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\google.apis.sheets.v4\\1.55.0.2371\\google.apis.sheets.v4.1.55.0.2371.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\h.formatters\\2.0.35\\h.formatters.2.0.35.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\h.formatters.binaryformatter\\2.0.35\\h.formatters.binaryformatter.2.0.35.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\h.pipes\\2.0.35\\h.pipes.2.0.35.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\htmlagilitypack\\1.11.38\\htmlagilitypack.1.11.38.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\mailkit\\3.1.1\\mailkit.3.1.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\markdig.signed\\0.21.1\\markdig.signed.0.21.1.nupkg.sha512",
@@ -31,10 +38,12 @@
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\3.1.6\\microsoft.aspnetcore.signalr.common.3.1.6.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\3.1.6\\microsoft.aspnetcore.signalr.protocols.json.3.1.6.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\microsoft.azure.cognitiveservices.vision.computervision.7.0.1.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0-2.22527.10\\microsoft.codeanalysis.common.4.5.0-2.22527.10.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0-2.22527.10\\microsoft.codeanalysis.csharp.4.5.0-2.22527.10.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.codeanalysis.csharp.scripting\\3.8.0\\microsoft.codeanalysis.csharp.scripting.3.8.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.codeanalysis.scripting.common\\3.8.0\\microsoft.codeanalysis.scripting.common.3.8.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\4.5.0-2.22527.10\\microsoft.codeanalysis.visualbasic.4.5.0-2.22527.10.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.6\\microsoft.extensions.configuration.3.1.6.nupkg.sha512",
@@ -75,6 +84,7 @@
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\microsoft.rest.clientruntime.azure.3.3.18.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.visualbasic\\10.3.0\\microsoft.visualbasic.10.3.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.visualstudio.ole.interop\\16.7.30328.74\\microsoft.visualstudio.ole.interop.16.7.30328.74.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\microsoft.web.webview2.1.0.1264.42.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.win32.registry.accesscontrol\\5.0.0\\microsoft.win32.registry.accesscontrol.5.0.0.nupkg.sha512",
@@ -97,9 +107,11 @@
     "C:\\Users\\DELL\\.nuget\\packages\\nito.disposables\\2.2.0\\nito.disposables.2.2.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\njsonschema\\10.2.2\\njsonschema.10.2.2.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\nlog\\4.5.11\\nlog.4.5.11.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\nodatime\\2.4.7\\nodatime.2.4.7.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\npoi\\2.5.5\\npoi.2.5.5.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\polly\\7.1.0\\polly.7.1.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\reflectionmagic\\4.1.0\\reflectionmagic.4.1.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\restsharp\\106.15.0\\restsharp.106.15.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\runtime.any.system.collections\\4.3.0\\runtime.any.system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\runtime.any.system.diagnostics.tools\\4.3.0\\runtime.any.system.diagnostics.tools.4.3.0.nupkg.sha512",
@@ -195,6 +207,8 @@
     "C:\\Users\\DELL\\.nuget\\packages\\system.io.pipes.accesscontrol\\5.0.0\\system.io.pipes.accesscontrol.5.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.io.ports\\5.0.0\\system.io.ports.5.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.linq.async\\5.0.0\\system.linq.async.5.0.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.linq.async.queryable\\5.0.0\\system.linq.async.queryable.5.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.management\\5.0.0\\system.management.5.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.management.automation\\7.1.0\\system.management.automation.7.1.0.nupkg.sha512",
@@ -219,6 +233,7 @@
     "C:\\Users\\DELL\\.nuget\\packages\\system.reflection.metadata\\5.0.0\\system.reflection.metadata.5.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.reflection.typeextensions\\4.3.0\\system.reflection.typeextensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.resources.extensions\\5.0.0\\system.resources.extensions.5.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.resources.resourcemanager\\4.3.0\\system.resources.resourcemanager.4.3.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.runtime.caching\\5.0.0\\system.runtime.caching.5.0.0.nupkg.sha512",
@@ -271,8 +286,12 @@
     "C:\\Users\\DELL\\.nuget\\packages\\uipath\\23.2.53.53687-preview\\uipath.23.2.53.53687-preview.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\uipath.activities.runtimegovernance.1.1.6.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\uipath.codedworkflows\\23.2.0-alpha.3503132\\uipath.codedworkflows.23.2.0-alpha.3503132.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\uipath.connectionclient\\1.4.1\\uipath.connectionclient.1.4.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\uipath.connectionclient\\1.4.2-20221020.8\\uipath.connectionclient.1.4.2-20221020.8.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\uipath.excel.activities\\2.18.0-preview\\uipath.excel.activities.2.18.0-preview.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\uipath.form.activities\\2.0.3\\uipath.form.activities.2.0.3.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary\\2.0.3\\uipath.formactivitylibrary.2.0.3.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\uipath.formactivitylibrary.contracts\\2.0.3\\uipath.formactivitylibrary.contracts.2.0.3.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\uipath.gsuite.activities\\2.0.3\\uipath.gsuite.activities.2.0.3.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\uipath.imageprocessing\\22.12.0-preview\\uipath.imageprocessing.22.12.0-preview.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\uipath.mail.activities\\1.18.2\\uipath.mail.activities.1.18.2.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\uipath.ocr.activities\\3.13.0-preview\\uipath.ocr.activities.3.13.0-preview.nupkg.sha512",
@@ -285,7 +304,8 @@
     "C:\\Users\\DELL\\.nuget\\packages\\uipath.uiautomation.activities\\23.2.0-preview\\uipath.uiautomation.activities.23.2.0-preview.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.2.0-preview\\uipath.uiautomation.activities.runtime.23.2.0-preview.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\uipath.vision\\3.8.0-preview\\uipath.vision.3.8.0-preview.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\uipath.webapi.activities\\1.13.3\\uipath.webapi.activities.1.13.3.nupkg.sha512"
+    "C:\\Users\\DELL\\.nuget\\packages\\uipath.webapi.activities\\1.13.3\\uipath.webapi.activities.1.13.3.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\uipath.webview2.runtime.x64\\0.1.0\\uipath.webview2.runtime.x64.0.1.0.nupkg.sha512"
   ],
   "logs": [
     {
@@ -298,6 +318,16 @@
       "targetGraphs": [
         "net6.0-windows7.0",
         "net6.0-windows7.0/win10-x64"
+      ]
+    },
+    {
+      "code": "NU1107",
+      "level": "Error",
+      "filePath": "C:\\Users\\DELL\\OneDrive\\Tài liệu\\UiPath\\HR_Assistant\\.local",
+      "message": "Version conflict detected for Microsoft.CodeAnalysis.Common. Install/reference Microsoft.CodeAnalysis.Common 4.5.0-2.22527.10 directly to project HR_Assistant to resolve this issue. \r\n HR_Assistant -> UiPath.System.Activities 23.2.0-preview -> Microsoft.CodeAnalysis.Common (>= 4.5.0-2.22527.10) \r\n HR_Assistant -> UiPath.Form.Activities 2.0.3 -> Microsoft.CodeAnalysis.CSharp.Scripting 3.8.0 -> Microsoft.CodeAnalysis.Common (= 3.8.0).",
+      "libraryId": "Microsoft.CodeAnalysis.Common",
+      "targetGraphs": [
+        "net6.0-windows7.0"
       ]
     }
   ]

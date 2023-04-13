@@ -22,5 +22,8 @@
   "UiPath.OCR.Activities.UiPathDocumentOCR.Endpoint": "https://du.uipath.com/ocr",
   "UiPath.OCR.Activities.UiPathDocumentOCR.ApiKey": "",
   "UiPath.OCR.Activities.CjkOCR.Endpoint": "",
-  "UiPath.OCR.Activities.CjkOCR.ApiKey": ""
+  "UiPath.OCR.Activities.CjkOCR.ApiKey": "",
+  "UiPath.OmniPage.Activities.OmniPageOCR.Scale": "1",
+  "UiPath.OmniPage.Activities.OmniPageOCR.Language": "",
+  "UiPath.OmniPage.Activities.OmniPageOCR.Profile": "None"
 }

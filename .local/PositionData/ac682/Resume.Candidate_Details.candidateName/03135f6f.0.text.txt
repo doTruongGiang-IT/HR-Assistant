@@ -1,0 +1,77 @@
+Do Truong Giang
+
+Software Engineer
+
+78/32/30, Ton That Thuyet, Ward 16, District 4, Ho Chi Minh City dotruonggiang290@gmail.com +84 776 134 908
+
+EDUCATION
+
+OBJECTIVE
+
+Sep 2018     SAIGON UNIVERSITY                       Currently, I am a junior in high-     
+            Major: Software Engineer                performance web applications with     
+Sep 2023                                             Angular (HTML5, SCSS, Typescript)     
+             GPA: 3.23/4                             and ReactiveX(RxJS). I am looking     
+                                                     for the opportunity to improve myself 
+EXPERIENCE                                           in the front-end section and I want to
+                                                     become a full-stack developer in 5    
+Jul 2022     VNG CORPORATION                         years.                                
+            Software Engineer                                                             
+Present      1/ Instantia Pay (12/2022 - present)    SKILLS                                
+             Main responsibilities:                                                        
+             - Convert mock design to Angular code                                         
+             - Develop the project                   Angular                               
+             - Improve UI/UX and app performance     Typescript                            
+
++
+
++
+
+2/ Athena Hunt (11/2022 - present)                           
+Main responsibilities:                  RxJS                 
+- Convert mock design to Angular code                        
+- Develop the project                   HTLM & CSS           
+- Improve UI/UX and app performance     SASS                 
+3/ Athena Omni (09/2022 - present)                           
+Main responsibilities:                  Responsive Web Design
+- Convert mock design to Angular code                        
+- Develop the project                   Version Control - Git
+- Improve UI/UX and app performance                          
+4/ iSign (07/2022 - 09/2022)            AJAX                 
+Main responsibilities:                                       
+- Develop the project                   English              
+- Improve UI/UX and app performance                          
+
+April 2021 CONG TY TNHH CONG NGHE VLAUNCH
+
++
+
+ Angular Developer
+
+May 2022 1/ TUCTAC - TUCTAC.VN (05/2022) Main responsibilities: - Participate in project requirements analysis and provide solutions - Improve UI/UX and app performance - Convert Figma Design to Angular code
+
+o
+
+o
+
+o
+
+2/ XUNAU TRIP - XUNAUTRIP.COM (04/2021 - 05/2022) Main responsibilities: - Participate in project requirements analysis and provide solutions - Convert Figma Design to Angular code - Maintain and develop the project - Improve UI/UX and app performance
+
+INTERESTS
+
+Study English Soccer Research new techniques
+
+3/ LAVISDECOR - LAVISDECOR.ART (01/2020 - 01/2021) Main responsibilities: - Convert Figma Design to Angular code - Maintain and develop the project - Improve UI/UX and app performance
+
+4/ VLAUNCH - VLAUNCH.GROUP (11/2019 - 06/2020) Main responsibilities: - Maintain and develop the project - Improve UI/UX and app performance
+
+CERTIFICATIONS
+
+2021 YDCC Certiﬁcate (In recognition of your achievement of getting into Top 12 teamsof the Youth Digital Citizen Challenge Competition from July 15th to August 29th, 2021)
+
+REFERENCES
+
+Le Minh Hoang CTO at Cong ty TNHH Cong nghe Vlaunch Email: hoanglm26@gmail.com Mobile: +84 36 445 3690
+
+Pham Anh Tuan CEO at Cong ty TNHH Cong nghe Vlaunch Email: tuan.grf@gmail.com Mobile: 0909880329

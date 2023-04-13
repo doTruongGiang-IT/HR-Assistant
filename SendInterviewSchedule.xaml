@@ -1,4 +1,12 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="SendInterviewSchedule" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1120,702" sap2010:WorkflowViewState.IdRef="SendInterviewSchedule_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ufa="clr-namespace:UiPath.Form.Activities;assembly=UiPath.Form.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="SendInterviewSchedule" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ufa="clr-namespace:UiPath.Form.Activities;assembly=UiPath.Form.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="candidateList" Type="InArgument(njl:JArray)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1103,4498</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>SendInterviewSchedule_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -105,7 +113,7 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="SendInterviewSchedule" sap:VirtualizedContainerService.HintSize="720,637" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="SendInterviewSchedule" sap:VirtualizedContainerService.HintSize="882,4433" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:String" Name="devMailAndCandidateMail" />
       <Variable x:TypeArguments="njl:JObject" Name="devMailJson" />
@@ -121,14 +129,16 @@
       <Variable x:TypeArguments="x:String" Name="hrNameParsed" />
       <Variable x:TypeArguments="x:String" Name="hrPhoneParsed" />
       <Variable x:TypeArguments="x:String" Name="linkMeetingParsed" />
+      <Variable x:TypeArguments="x:String" Name="roundParsed" />
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
         <av:Size x:Key="ShapeSize">60,75</av:Size>
-        <x:Double x:Key="Width">686</x:Double>
-        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,185</av:PointCollection>
+        <x:Double x:Key="Width">848</x:Double>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.5 400,77.5 400,103.49999999999997</av:PointCollection>
+        <x:Double x:Key="Height">4396.5</x:Double>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
@@ -137,20 +147,20 @@
     <FlowStep x:Name="__ReferenceID0">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">56,185</av:Point>
-          <av:Size x:Key="ShapeSize">488,298</av:Size>
+          <av:Point x:Key="ShapeLocation">4,103.49999999999997</av:Point>
+          <av:Size x:Key="ShapeSize">792,4048</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ufa:FormActivity CreateFormActivityFileName="{x:Null}" CreateFormActivityFilePath="{x:Null}" Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormHeight="{x:Null}" FormTitle="{x:Null}" FormWidth="{x:Null}" IconPath="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" CreateFormId="26f065c6-4236-4d12-aba3-b6e5746a9098" DevTools="False" DisableMaximizeButton="False" DisableMinimizeButton="False" DisableSanitize="False" DisplayName="Create Form" EnableAccessibility="False" FormFieldsOutputData="[devMailAndCandidateMail]" FormSchema="%[{&quot;label&quot;:&quot;Interview Email&quot;,&quot;tableView&quot;:true,&quot;validate&quot;:{&quot;required&quot;:true},&quot;key&quot;:&quot;interviewEmail&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Select Candidate&quot;,&quot;tableView&quot;:true,&quot;data&quot;:{&quot;values&quot;:[{&quot;label&quot;:&quot;Do Truong Giang&quot;,&quot;value&quot;:&quot;Do Truong Giang|truonggiangd508@gmail.com&quot;}]},&quot;validate&quot;:{&quot;onlyAvailableItems&quot;:false},&quot;key&quot;:&quot;selectCandidate&quot;,&quot;type&quot;:&quot;select&quot;,&quot;indexeddb&quot;:{&quot;filter&quot;:{}},&quot;input&quot;:true},{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;tableView&quot;:false}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100120&quot;,&quot;Name&quot;:&quot;Default&quot;,&quot;BaseCss&quot;:&quot;./assets/css/themes/uipath.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;./assets/themeicons/uipath.png&quot;,&quot;OverrideCssUrl&quot;:&quot;./assets/css/themes/uipath.custom.css&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="792,3851" sap2010:WorkflowViewState.IdRef="FormActivity_1" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="True" StartAsMinimized="False">
+      <ufa:FormActivity CreateFormActivityFileName="{x:Null}" CreateFormActivityFilePath="{x:Null}" Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormHeight="{x:Null}" FormTitle="{x:Null}" FormWidth="{x:Null}" IconPath="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" CreateFormId="26f065c6-4236-4d12-aba3-b6e5746a9098" DevTools="False" DisableMaximizeButton="False" DisableMinimizeButton="False" DisableSanitize="False" DisplayName="Create Form" EnableAccessibility="False" FormFieldsOutputData="[devMailAndCandidateMail]" FormSchema="%[{&quot;label&quot;:&quot;Interview Email&quot;,&quot;tableView&quot;:true,&quot;validate&quot;:{&quot;required&quot;:true},&quot;key&quot;:&quot;interviewEmail&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Select Candidate&quot;,&quot;tableView&quot;:true,&quot;data&quot;:{&quot;values&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;value&quot;:&quot;&quot;}]},&quot;validate&quot;:{&quot;onlyAvailableItems&quot;:false},&quot;key&quot;:&quot;selectCandidate&quot;,&quot;type&quot;:&quot;select&quot;,&quot;indexeddb&quot;:{&quot;filter&quot;:{}},&quot;input&quot;:true},{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;tableView&quot;:false}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100120&quot;,&quot;Name&quot;:&quot;Default&quot;,&quot;BaseCss&quot;:&quot;./assets/css/themes/uipath.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;./assets/themeicons/uipath.png&quot;,&quot;OverrideCssUrl&quot;:&quot;./assets/css/themes/uipath.custom.css&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="792,4057" sap2010:WorkflowViewState.IdRef="FormActivity_1" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="True" StartAsMinimized="False">
         <ufa:FormActivity.Body>
           <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
-            <Sequence sap:VirtualizedContainerService.HintSize="754,3724" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence sap:VirtualizedContainerService.HintSize="754,3930" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="692,3613" sap2010:WorkflowViewState.IdRef="Sequence_1">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="692,3819" sap2010:WorkflowViewState.IdRef="Sequence_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -182,10 +192,10 @@
                     <InArgument x:TypeArguments="x:String">[candidateMailJson.SelectToken("selectCandidate").ToString.Split("|").GetValue(0).ToString]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ufa:FormActivity CreateFormActivityFileName="{x:Null}" CreateFormActivityFilePath="{x:Null}" Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormHeight="{x:Null}" FormTitle="{x:Null}" FormWidth="{x:Null}" IconPath="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" CreateFormId="be196a89-cd04-49a0-b880-289cc9fc1e50" DevTools="False" DisableMaximizeButton="False" DisableMinimizeButton="False" DisableSanitize="False" DisplayName="Create Form" EnableAccessibility="False" FormFieldsOutputData="[interviewScheduleForm]" FormSchema="%[{&quot;label&quot;:&quot;Date / Time&quot;,&quot;tableView&quot;:false,&quot;enableMinDateInput&quot;:true,&quot;datePicker&quot;:{&quot;disableWeekends&quot;:false,&quot;disableWeekdays&quot;:false},&quot;enableMaxDateInput&quot;:true,&quot;key&quot;:&quot;dateTime&quot;,&quot;type&quot;:&quot;datetime&quot;,&quot;input&quot;:true,&quot;widget&quot;:{&quot;type&quot;:&quot;calendar&quot;,&quot;displayInTimezone&quot;:&quot;viewer&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;useLocaleSettings&quot;:false,&quot;allowInput&quot;:true,&quot;mode&quot;:&quot;single&quot;,&quot;enableTime&quot;:true,&quot;noCalendar&quot;:false,&quot;format&quot;:&quot;yyyy-MM-dd hh:mm a&quot;,&quot;hourIncrement&quot;:1,&quot;minuteIncrement&quot;:1,&quot;time_24hr&quot;:false,&quot;minDate&quot;:null,&quot;disableWeekends&quot;:false,&quot;disableWeekdays&quot;:false,&quot;maxDate&quot;:null}},{&quot;label&quot;:&quot;Position&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;position&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Select Interview Form&quot;,&quot;tableView&quot;:true,&quot;data&quot;:{&quot;values&quot;:[{&quot;label&quot;:&quot;Online&quot;,&quot;value&quot;:&quot;online&quot;},{&quot;label&quot;:&quot;Offline&quot;,&quot;value&quot;:&quot;offline&quot;}]},&quot;validate&quot;:{&quot;onlyAvailableItems&quot;:false},&quot;key&quot;:&quot;selectInterviewForm&quot;,&quot;type&quot;:&quot;select&quot;,&quot;indexeddb&quot;:{&quot;filter&quot;:{}},&quot;input&quot;:true},{&quot;label&quot;:&quot;Link Meeting&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;linkMeeting&quot;,&quot;conditional&quot;:{&quot;show&quot;:false,&quot;when&quot;:&quot;selectInterviewForm&quot;,&quot;eq&quot;:&quot;offline&quot;},&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;HR Name&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;hrName&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;HR Phone&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;hrPhone1&quot;,&quot;type&quot;:&quot;phoneNumber&quot;,&quot;input&quot;:true},{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;tableView&quot;:false}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100120&quot;,&quot;Name&quot;:&quot;Default&quot;,&quot;BaseCss&quot;:&quot;./assets/css/themes/uipath.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;./assets/themeicons/uipath.png&quot;,&quot;OverrideCssUrl&quot;:&quot;./assets/css/themes/uipath.custom.css&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="630,2936" sap2010:WorkflowViewState.IdRef="FormActivity_3" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="True" StartAsMinimized="False">
+                <ufa:FormActivity CreateFormActivityFileName="{x:Null}" CreateFormActivityFilePath="{x:Null}" Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormHeight="{x:Null}" FormTitle="{x:Null}" FormWidth="{x:Null}" IconPath="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" CreateFormId="be196a89-cd04-49a0-b880-289cc9fc1e50" DevTools="False" DisableMaximizeButton="False" DisableMinimizeButton="False" DisableSanitize="False" DisplayName="Create Form" EnableAccessibility="False" FormFieldsOutputData="[interviewScheduleForm]" FormSchema="%[{&quot;label&quot;:&quot;Date / Time&quot;,&quot;tableView&quot;:false,&quot;enableMinDateInput&quot;:true,&quot;datePicker&quot;:{&quot;disableWeekends&quot;:false,&quot;disableWeekdays&quot;:false},&quot;enableMaxDateInput&quot;:true,&quot;key&quot;:&quot;dateTime&quot;,&quot;type&quot;:&quot;datetime&quot;,&quot;input&quot;:true,&quot;widget&quot;:{&quot;type&quot;:&quot;calendar&quot;,&quot;displayInTimezone&quot;:&quot;viewer&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;useLocaleSettings&quot;:false,&quot;allowInput&quot;:true,&quot;mode&quot;:&quot;single&quot;,&quot;enableTime&quot;:true,&quot;noCalendar&quot;:false,&quot;format&quot;:&quot;yyyy-MM-dd hh:mm a&quot;,&quot;hourIncrement&quot;:1,&quot;minuteIncrement&quot;:1,&quot;time_24hr&quot;:false,&quot;minDate&quot;:null,&quot;disableWeekends&quot;:false,&quot;disableWeekdays&quot;:false,&quot;maxDate&quot;:null}},{&quot;label&quot;:&quot;Position&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;position&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Select Interview Form&quot;,&quot;tableView&quot;:true,&quot;data&quot;:{&quot;values&quot;:[{&quot;label&quot;:&quot;Online&quot;,&quot;value&quot;:&quot;online&quot;},{&quot;label&quot;:&quot;Offline&quot;,&quot;value&quot;:&quot;offline&quot;}]},&quot;validate&quot;:{&quot;onlyAvailableItems&quot;:false},&quot;key&quot;:&quot;selectInterviewForm&quot;,&quot;type&quot;:&quot;select&quot;,&quot;indexeddb&quot;:{&quot;filter&quot;:{}},&quot;input&quot;:true},{&quot;label&quot;:&quot;Link Meeting&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;linkMeeting&quot;,&quot;conditional&quot;:{&quot;show&quot;:false,&quot;when&quot;:&quot;selectInterviewForm&quot;,&quot;eq&quot;:&quot;offline&quot;},&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Round&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;round&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;HR Name&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;hrName&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;HR Phone&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;hrPhone&quot;,&quot;type&quot;:&quot;phoneNumber&quot;,&quot;input&quot;:true},{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;tableView&quot;:false}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100120&quot;,&quot;Name&quot;:&quot;Default&quot;,&quot;BaseCss&quot;:&quot;./assets/css/themes/uipath.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;./assets/themeicons/uipath.png&quot;,&quot;OverrideCssUrl&quot;:&quot;./assets/css/themes/uipath.custom.css&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="630,3142" sap2010:WorkflowViewState.IdRef="FormActivity_3" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="True" StartAsMinimized="False">
                   <ufa:FormActivity.Body>
                     <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,2809" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,3015" sap2010:WorkflowViewState.IdRef="Sequence_2">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -216,7 +226,15 @@
                             <InArgument x:TypeArguments="x:String">[interviewScheduleFormJson.SelectToken("selectInterviewForm").ToString]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <If Condition="[interviewTypeParsed.ToLower.Equals(&quot;online&quot;)]" sap:VirtualizedContainerService.HintSize="530,400" sap2010:WorkflowViewState.IdRef="If_1">
+                        <Assign sap:VirtualizedContainerService.HintSize="530,82" sap2010:WorkflowViewState.IdRef="Assign_10">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[roundParsed]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[interviewScheduleFormJson.SelectToken("round").ToString]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <If Condition="[interviewTypeParsed.ToLower.Equals(&quot;online&quot;)]" sap:VirtualizedContainerService.HintSize="530,490" sap2010:WorkflowViewState.IdRef="If_1">
                           <If.Then>
                             <Sequence sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_5">
                               <sap:WorkflowViewStateService.ViewState>
@@ -235,12 +253,22 @@
                             </Sequence>
                           </If.Then>
                           <If.Else>
-                            <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <Sequence sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_6">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[linkMeetingParsed]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <Literal x:TypeArguments="x:String" Value="" />
+                                  </InArgument>
+                                </Assign.Value>
+                              </Assign>
                             </Sequence>
                           </If.Else>
                         </If>
@@ -260,19 +288,19 @@
                             <InArgument x:TypeArguments="x:String">[interviewScheduleFormJson.SelectToken("hrPhone").ToString]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <umab:GmailApplicationCard Account="{x:Null}" ClientId="{x:Null}" ClientSecret="{x:Null}" EmailAddress="{x:Null}" ConnectionAccountName="dotruonggiang290@gmail.com" ConnectionId="41807727-57b4-ed11-ba77-0003ffe7e379" DisplayName="Use Gmail" sap:VirtualizedContainerService.HintSize="530,1548" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_1" Timeout="90" UseConnectionService="True">
+                        <umab:GmailApplicationCard Account="{x:Null}" ClientId="{x:Null}" ClientSecret="{x:Null}" EmailAddress="{x:Null}" ConnectionAccountName="dotruonggiang290@gmail.com" ConnectionId="41807727-57b4-ed11-ba77-0003ffe7e379" DisplayName="Use Gmail" sap:VirtualizedContainerService.HintSize="530,1542" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_1" Timeout="90" UseConnectionService="True">
                           <umab:GmailApplicationCard.Body>
                             <ActivityAction x:TypeArguments="um:IMailQuickHandle">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Gmail" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1368" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1362" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[&quot;&#xD;&#xA;Dear DEV,&#xD;&#xA;VNG would like to invite you for the 2nd interview with the details as follows:&#xD;&#xA;&#xD;&#xA;- Timing: &quot;+timingParsed+&quot;&#xD;&#xA;- Interview Type: &quot;+interviewTypeParsed+&#xD;&#xA;If(linkMeetingParsed.Trim.Equals(&quot;&quot;), &quot;&quot;, &quot;&#xD;&#xA;- Join interview By link: &quot;+linkMeetingParsed)+&#xD;&#xA;&quot;&#xD;&#xA;- Contact point:  &quot;+hrNameParsed+&quot; - HR Department - &quot;+hrPhoneParsed+&quot;&#xD;&#xA;&#xD;&#xA;Please confirm if you can arrange to join this interview.&#xD;&#xA;&#xD;&#xA;Thanks and wish you have a good working day.&#xD;&#xA;Regards,&#x9;&#xD;&#xA;&quot;]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,601" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Interview Schedule" To="[devMailParsed]" UseDocumentAsBody="False">
+                                <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[&quot;&#xD;&#xA;Dear DEV,&#xD;&#xA;VNG would like to invite you for the interview round &quot;+roundParsed+&quot; with the details as follows:&#xD;&#xA;&#xD;&#xA;- Timing: &quot;+timingParsed+&quot;&#xD;&#xA;- Interview Type: &quot;+interviewTypeParsed+&#xD;&#xA;If(linkMeetingParsed.Trim.Equals(&quot;&quot;), &quot;&quot;, &quot;&#xD;&#xA;- Join interview By link: &quot;+linkMeetingParsed)+&#xD;&#xA;&quot;&#xD;&#xA;- Contact point:  &quot;+hrNameParsed+&quot; - HR Department - &quot;+hrPhoneParsed+&quot;&#xD;&#xA;&#xD;&#xA;Please confirm if you can arrange to join this interview.&#xD;&#xA;&#xD;&#xA;Thanks and wish you have a good working day.&#xD;&#xA;Regards,&#x9;&#xD;&#xA;&quot;]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,598" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Interview Schedule" To="[devMailParsed]" UseDocumentAsBody="False">
                                   <umab:SendMailX.Files>
                                     <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                                   </umab:SendMailX.Files>
@@ -287,7 +315,7 @@
                                     </umabh:HtmlContentArgument>
                                   </umab:SendMailX.HtmlBodyFromFile>
                                 </umab:SendMailX>
-                                <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[&quot;&#xD;&#xA;Dear &quot;+candidateName+&quot;,&#xD;&#xA;VNG would like to invite you for the 2nd interview with the details as follows:&#xD;&#xA;&#xD;&#xA;- Position: &quot;+positionParsed+&quot;&#xD;&#xA;- Timing: &quot;+timingParsed+&quot;&#xD;&#xA;- Interview Type: &quot;+interviewTypeParsed+&#xD;&#xA;If(linkMeetingParsed.Trim.Equals(&quot;&quot;), &quot;&quot;, &quot;&#xD;&#xA;- Join interview By link: &quot;+linkMeetingParsed)+&#xD;&#xA;&quot;&#xD;&#xA;- Contact point:  &quot;+hrNameParsed+&quot; - HR Department - &quot;+hrPhoneParsed+&quot;&#xD;&#xA;&#xD;&#xA;Please confirm if you can arrange to join this interview.&#xD;&#xA;&#xD;&#xA;Thanks and wish you have a good working day.&#xD;&#xA;Regards,&#x9;&#xD;&#xA;&quot;]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,616" sap2010:WorkflowViewState.IdRef="SendMailX_2" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Interview Schedule" To="[candidateMailParsed]" UseDocumentAsBody="False">
+                                <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[&quot;&#xA;Dear &quot;+candidateName+&quot;,&#xA;VNG would like to invite you for the 2nd interview with the details as follows:&#xA;&#xA;- Position: &quot;+positionParsed+&quot;&#xA;- Timing: &quot;+timingParsed+&quot;&#xA;- Interview Type: &quot;+interviewTypeParsed+&#xA;If(linkMeetingParsed.Trim.Equals(&quot;&quot;), &quot;&quot;, &quot;&#xA;- Join interview By link: &quot;+linkMeetingParsed)+&#xA;&quot;&#xA;- Contact point:  &quot;+hrNameParsed+&quot; - HR Department - &quot;+hrPhoneParsed+&quot;&#xA;&#xA;Please confirm if you can arrange to join this interview.&#xA;&#xA;Thanks and wish you have a good working day.&#xA;Regards,&#x9;&#xA;&quot;]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,613" sap2010:WorkflowViewState.IdRef="SendMailX_2" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Interview Schedule" To="[candidateMailParsed]" UseDocumentAsBody="False">
                                   <umab:SendMailX.Files>
                                     <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                                   </umab:SendMailX.Files>
@@ -328,7 +356,7 @@
           </ActivityAction>
         </ufa:FormActivity.DelayBody>
         <ufa:FormActivity.FormFieldsCollection>
-          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          <InArgument x:TypeArguments="njl:JArray" x:Key="selectCandidate">[candidateList]</InArgument>
         </ufa:FormActivity.FormFieldsCollection>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">

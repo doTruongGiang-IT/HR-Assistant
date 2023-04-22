@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1103,5839</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1049,5839</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessCV_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="79">
@@ -199,7 +199,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">330,2.5</av:Point>
         <av:Size x:Key="ShapeSize">60,75</av:Size>
-        <av:PointCollection x:Key="ConnectorLocation">360,77.5 360,107.5 409,107.5 409,137.99999999999997</av:PointCollection>
+        <av:PointCollection x:Key="ConnectorLocation">360,77.5 360,107.5 447,107.5 447,137.99999999999997</av:PointCollection>
         <x:Double x:Key="Width">892</x:Double>
         <x:Double x:Key="Height">5737</x:Double>
       </scg:Dictionary>
@@ -211,13 +211,13 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">56,137.99999999999997</av:Point>
-          <av:Size x:Key="ShapeSize">706,4118</av:Size>
+          <av:Size x:Key="ShapeSize">782,5103</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ufa:FormActivity CreateFormActivityFileName="{x:Null}" CreateFormActivityFilePath="{x:Null}" Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormHeight="{x:Null}" FormTitle="{x:Null}" FormWidth="{x:Null}" IconPath="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" CreateFormId="24928006-9163-42e3-b18b-91523d975d83" DevTools="False" DisableMaximizeButton="False" DisableMinimizeButton="False" DisableSanitize="False" DisplayName="Create Form" EnableAccessibility="False" FormFieldsOutputData="[devMail]" FormSchema="%[{&quot;label&quot;:&quot;Is there any Resume you want to process?&quot;,&quot;optionsLabelPosition&quot;:&quot;right&quot;,&quot;inline&quot;:false,&quot;tableView&quot;:false,&quot;values&quot;:[{&quot;label&quot;:&quot;Yes&quot;,&quot;value&quot;:&quot;yes&quot;,&quot;shortcut&quot;:&quot;&quot;},{&quot;label&quot;:&quot;No&quot;,&quot;value&quot;:&quot;no&quot;,&quot;shortcut&quot;:&quot;&quot;}],&quot;key&quot;:&quot;isProcessCV&quot;,&quot;type&quot;:&quot;radio&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Interviewer Mail&quot;,&quot;tableView&quot;:false,&quot;key&quot;:&quot;devMail&quot;,&quot;conditional&quot;:{&quot;show&quot;:true,&quot;when&quot;:&quot;isProcessCV&quot;,&quot;eq&quot;:&quot;yes&quot;},&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;tableView&quot;:false}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100120&quot;,&quot;Name&quot;:&quot;Default&quot;,&quot;BaseCss&quot;:&quot;./assets/css/themes/uipath.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;./assets/themeicons/uipath.png&quot;,&quot;OverrideCssUrl&quot;:&quot;./assets/css/themes/uipath.custom.css&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="782,5102" sap2010:WorkflowViewState.IdRef="FormActivity_3" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="True" StartAsMinimized="False">
+      <ufa:FormActivity CreateFormActivityFileName="{x:Null}" CreateFormActivityFilePath="{x:Null}" Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormHeight="{x:Null}" FormTitle="{x:Null}" FormWidth="{x:Null}" IconPath="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" CreateFormId="24928006-9163-42e3-b18b-91523d975d83" DevTools="False" DisableMaximizeButton="False" DisableMinimizeButton="False" DisableSanitize="False" DisplayName="Create Form" EnableAccessibility="False" FormFieldsOutputData="[devMail]" FormSchema="%[{&quot;label&quot;:&quot;Is there any Resume you want to process?&quot;,&quot;optionsLabelPosition&quot;:&quot;right&quot;,&quot;inline&quot;:false,&quot;tableView&quot;:false,&quot;values&quot;:[{&quot;label&quot;:&quot;Yes&quot;,&quot;value&quot;:&quot;yes&quot;,&quot;shortcut&quot;:&quot;&quot;},{&quot;label&quot;:&quot;No&quot;,&quot;value&quot;:&quot;no&quot;,&quot;shortcut&quot;:&quot;&quot;}],&quot;key&quot;:&quot;isProcessCV&quot;,&quot;type&quot;:&quot;radio&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Interviewer Mail&quot;,&quot;tableView&quot;:false,&quot;key&quot;:&quot;devMail&quot;,&quot;conditional&quot;:{&quot;show&quot;:true,&quot;when&quot;:&quot;isProcessCV&quot;,&quot;eq&quot;:&quot;yes&quot;},&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;tableView&quot;:false}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100120&quot;,&quot;Name&quot;:&quot;Default&quot;,&quot;BaseCss&quot;:&quot;./assets/css/themes/uipath.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;./assets/themeicons/uipath.png&quot;,&quot;OverrideCssUrl&quot;:&quot;./assets/css/themes/uipath.custom.css&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="782,5103" sap2010:WorkflowViewState.IdRef="FormActivity_3" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="True" StartAsMinimized="False">
         <ufa:FormActivity.Body>
           <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="744,4975" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="744,4976" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="devMailParsed" />
               </Sequence.Variables>
@@ -243,7 +243,7 @@
                   <InArgument x:TypeArguments="x:String">[devMailJson.SelectToken("isProcessCV").ToString]</InArgument>
                 </Assign.Value>
               </Assign>
-              <If Condition="[isProcessCV.ToLower.Equals(&quot;yes&quot;) = true]" sap:VirtualizedContainerService.HintSize="682,4520" sap2010:WorkflowViewState.IdRef="If_3">
+              <If Condition="[isProcessCV.ToLower.Equals(&quot;yes&quot;) = true]" sap:VirtualizedContainerService.HintSize="682,4521" sap2010:WorkflowViewState.IdRef="If_3">
                 <If.Then>
                   <Sequence sap:VirtualizedContainerService.HintSize="648,4290" sap2010:WorkflowViewState.IdRef="Sequence_1">
                     <Sequence.Variables>
@@ -283,7 +283,7 @@
                         <InArgument x:TypeArguments="x:String">[Convert.ToBase64String(bytes)]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://api.affinda.com/v3/documents" sap:VirtualizedContainerService.HintSize="606,70" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="POST" OAuth2Token="581a533e7f346f0e8caf20f69446f795fb0615ad" Result="[cvResponse]" TimeoutMS="60000">
+                    <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://api.affinda.com/v3/documents" sap:VirtualizedContainerService.HintSize="606,70" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="POST" OAuth2Token="e1a5a096813aef8fa06073fbf45bc70b1aa63d5e" Result="[cvResponse]" TimeoutMS="60000">
                       <ui:HttpClient.Attachments>
                         <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                       </ui:HttpClient.Attachments>
@@ -296,8 +296,8 @@
                       <ui:HttpClient.Parameters>
                         <InArgument x:TypeArguments="x:String" x:Key="wait">true</InArgument>
                         <InArgument x:TypeArguments="x:String" x:Key="rejectDuplicates">false</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="workspace">cVndyniT</InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="file">[fileBase64]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="workspace">vLKKUbHH</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="file">1.1231: VisualBasicValue&lt;String&gt;</InArgument>
                       </ui:HttpClient.Parameters>
                       <ui:HttpClient.UrlSegments>
                         <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
@@ -507,7 +507,7 @@
                   </Sequence>
                 </If.Then>
                 <If.Else>
-                  <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence sap:VirtualizedContainerService.HintSize="300,81" sap2010:WorkflowViewState.IdRef="Sequence_2">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>

@@ -99,8 +99,8 @@
       "SortBy": 0,
       "VariablesSectionElementsOrder": null,
       "ArgumentsSectionElementsOrder": [
-        "devEmail",
-        "cvParsed"
+        "candidate_list",
+        "candidateList"
       ],
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null
@@ -147,6 +147,14 @@
     },
     {
       "Path": "ScreeningCV.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": null,
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "HandleReviewCV.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": null,
       "ArgumentsSectionElementsOrder": null,

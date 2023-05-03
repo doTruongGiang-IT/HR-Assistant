@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1049,8089</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1049,11169</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessCV_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="79">
@@ -175,7 +175,7 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="ProcessCV" sap:VirtualizedContainerService.HintSize="1014,10787" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="ProcessCV" sap:VirtualizedContainerService.HintSize="1014,11578" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:String" Name="selectedCv" />
       <Variable x:TypeArguments="x:String" Name="candidateCv" />
@@ -217,16 +217,8 @@
       <Variable x:TypeArguments="njl:JArray" Name="candidate_array" />
       <Variable x:TypeArguments="njl:JArray" Default="[new JArray()]" Name="candidate_list_obj" />
       <Variable x:TypeArguments="njl:JObject" Default="[new JObject()]" Name="candidate_obj" />
-      <Variable x:TypeArguments="njl:JObject" Name="candidateCreate">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="njl:JObject" ExpressionText="new JObject()" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:Int32" Name="candidate_length">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="njl:JObject" Default="[new JObject()]" Name="candidateCreate" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="candidate_length" />
       <Variable x:TypeArguments="x:String" Name="strObj" />
       <Variable x:TypeArguments="p:DocumentTaxonomy" Name="vTaxonomy" />
       <Variable x:TypeArguments="x:String" Name="vDocText" />
@@ -239,6 +231,8 @@
       <Variable x:TypeArguments="x:String" Name="candidateMail" />
       <Variable x:TypeArguments="sd:DataTable" Name="candidateDataTable" />
       <Variable x:TypeArguments="sd:DataTable" Name="candidateListFilter" />
+      <Variable x:TypeArguments="x:String" Name="taskJobTitle" />
+      <Variable x:TypeArguments="x:String" Name="jobTitle" />
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -247,7 +241,7 @@
         <av:Size x:Key="ShapeSize">60,75</av:Size>
         <av:PointCollection x:Key="ConnectorLocation">360,77.5 360,107.5 370,107.5 370,139.5</av:PointCollection>
         <x:Double x:Key="Width">980</x:Double>
-        <x:Double x:Key="Height">10750</x:Double>
+        <x:Double x:Key="Height">11541</x:Double>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
@@ -257,13 +251,13 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">9,279</av:Point>
-          <av:Size x:Key="ShapeSize">880,10389</av:Size>
+          <av:Size x:Key="ShapeSize">804,11262</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ufa:FormActivity CreateFormActivityFileName="{x:Null}" CreateFormActivityFilePath="{x:Null}" Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormTitle="{x:Null}" IconPath="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" CreateFormId="24928006-9163-42e3-b18b-91523d975d83" DevTools="False" DisableMaximizeButton="False" DisableMinimizeButton="False" DisableSanitize="False" DisplayName="Create Form" EnableAccessibility="False" FormFieldsOutputData="[devMail]" FormHeight="400" FormSchema="%[{&quot;label&quot;:&quot;Select Job&quot;,&quot;tableView&quot;:true,&quot;data&quot;:{&quot;values&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;value&quot;:&quot;&quot;}]},&quot;validate&quot;:{&quot;required&quot;:true,&quot;onlyAvailableItems&quot;:false},&quot;key&quot;:&quot;selectJob&quot;,&quot;type&quot;:&quot;select&quot;,&quot;indexeddb&quot;:{&quot;filter&quot;:{}},&quot;input&quot;:true},{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;tableView&quot;:false}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100120&quot;,&quot;Name&quot;:&quot;Default&quot;,&quot;BaseCss&quot;:&quot;./assets/css/themes/uipath.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;./assets/themeicons/uipath.png&quot;,&quot;OverrideCssUrl&quot;:&quot;./assets/css/themes/uipath.custom.css&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" FormWidth="800" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="804,10679" sap2010:WorkflowViewState.IdRef="FormActivity_3" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="True" StartAsMinimized="False">
+      <ufa:FormActivity CreateFormActivityFileName="{x:Null}" CreateFormActivityFilePath="{x:Null}" Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormTitle="{x:Null}" IconPath="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" CreateFormId="24928006-9163-42e3-b18b-91523d975d83" DevTools="False" DisableMaximizeButton="False" DisableMinimizeButton="False" DisableSanitize="False" DisplayName="Create Form" EnableAccessibility="False" FormFieldsOutputData="[devMail]" FormHeight="400" FormSchema="%[{&quot;label&quot;:&quot;Select Job&quot;,&quot;tableView&quot;:true,&quot;data&quot;:{&quot;values&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;value&quot;:&quot;&quot;}]},&quot;validate&quot;:{&quot;required&quot;:true,&quot;onlyAvailableItems&quot;:false},&quot;key&quot;:&quot;selectJob&quot;,&quot;type&quot;:&quot;select&quot;,&quot;indexeddb&quot;:{&quot;filter&quot;:{}},&quot;input&quot;:true},{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;tableView&quot;:false}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100120&quot;,&quot;Name&quot;:&quot;Default&quot;,&quot;BaseCss&quot;:&quot;./assets/css/themes/uipath.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;./assets/themeicons/uipath.png&quot;,&quot;OverrideCssUrl&quot;:&quot;./assets/css/themes/uipath.custom.css&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" FormWidth="800" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="804,11262" sap2010:WorkflowViewState.IdRef="FormActivity_3" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="True" StartAsMinimized="False">
         <ufa:FormActivity.Body>
           <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="766,10552" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="766,11135" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -286,7 +280,15 @@
                   <InArgument x:TypeArguments="x:String">[devMailJson.SelectToken("selectJob").ToString.Split("|").GetValue(1).ToString]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="704,290" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <Assign sap:VirtualizedContainerService.HintSize="704,82" sap2010:WorkflowViewState.IdRef="Assign_42">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[jobTitle]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[devMailJson.SelectToken("selectJob").ToString.Split("|").GetValue(2).ToString]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="704,250" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                 <ui:CommentOut.Body>
                   <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,171" sap2010:WorkflowViewState.IdRef="Sequence_17">
                     <sap:WorkflowViewStateService.ViewState>
@@ -374,13 +376,13 @@
                   <InArgument x:TypeArguments="x:String" xml:space="preserve">[cvParsed.SelectToken("data.location.streetNumber").ToString + ", " + cvParsed.SelectToken("data.location.street").ToString + ",  " + cvParsed.SelectToken("data.location.city").ToString + ", " + cvParsed.SelectToken("data.location.country").ToString]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="704,1051" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[candidate_list_obj]">
+              <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="704,1072" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[candidate_list_obj]">
                 <ui:ForEach.Body>
                   <ActivityAction x:TypeArguments="njl:JToken">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="njl:JToken" Name="candidate" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,854" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,886" sap2010:WorkflowViewState.IdRef="Sequence_14">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -410,7 +412,7 @@
                           <InArgument x:TypeArguments="x:String">[candidate.selectToken("value").ToString.Split("|").GetValue(5).ToString]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <If Condition="[candidateMail = candidateStoreMail]" sap:VirtualizedContainerService.HintSize="510,400" sap2010:WorkflowViewState.IdRef="If_6">
+                      <If Condition="[candidateMail = candidateStoreMail]" sap:VirtualizedContainerService.HintSize="510,432" sap2010:WorkflowViewState.IdRef="If_6">
                         <If.Then>
                           <Sequence sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_15">
                             <sap:WorkflowViewStateService.ViewState>
@@ -442,9 +444,9 @@
                   </ActivityAction>
                 </ui:ForEach.Body>
               </ui:ForEach>
-              <If Condition="[isCandidateExists]" sap:VirtualizedContainerService.HintSize="704,3282" sap2010:WorkflowViewState.IdRef="If_7">
+              <If Condition="[isCandidateExists]" sap:VirtualizedContainerService.HintSize="704,3666" sap2010:WorkflowViewState.IdRef="If_7">
                 <If.Then>
-                  <Sequence sap:VirtualizedContainerService.HintSize="300,1566" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                  <Sequence sap:VirtualizedContainerService.HintSize="300,1742" sap2010:WorkflowViewState.IdRef="Sequence_19">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -478,6 +480,17 @@
                       <InArgument x:TypeArguments="x:String">location</InArgument>
                       <InArgument x:TypeArguments="njl:JToken">[candidateLocation]</InArgument>
                     </InvokeMethod>
+                    <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="258,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_27" MethodName="Add">
+                      <InvokeMethod.TargetObject>
+                        <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
+                      </InvokeMethod.TargetObject>
+                      <InArgument x:TypeArguments="x:String">
+                        <Literal x:TypeArguments="x:String">title</Literal>
+                      </InArgument>
+                      <InArgument x:TypeArguments="njl:JToken">
+                        <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="jobTitle" />
+                      </InArgument>
+                    </InvokeMethod>
                     <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="258,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_21" MethodName="Add">
                       <InvokeMethod.TargetObject>
                         <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
@@ -496,23 +509,15 @@
                       <InvokeMethod.TargetObject>
                         <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                       </InvokeMethod.TargetObject>
-                      <InArgument x:TypeArguments="x:String">
-                        <Literal x:TypeArguments="x:String">status</Literal>
-                      </InArgument>
-                      <InArgument x:TypeArguments="njl:JToken">
-                        <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="candidateStoreStatus" />
-                      </InArgument>
+                      <InArgument x:TypeArguments="x:String">status</InArgument>
+                      <InArgument x:TypeArguments="njl:JToken">[candidateStoreStatus]</InArgument>
                     </InvokeMethod>
                     <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="258,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_25" MethodName="Add">
                       <InvokeMethod.TargetObject>
                         <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                       </InvokeMethod.TargetObject>
-                      <InArgument x:TypeArguments="x:String">
-                        <Literal x:TypeArguments="x:String">roundInterview</Literal>
-                      </InArgument>
-                      <InArgument x:TypeArguments="njl:JToken">
-                        <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="0" />
-                      </InArgument>
+                      <InArgument x:TypeArguments="x:String">roundInterview</InArgument>
+                      <InArgument x:TypeArguments="njl:JToken">[0]</InArgument>
                     </InvokeMethod>
                     <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[candidateCreate.ToString]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[&quot;http://localhost:8080/api/v1/candidates/&quot;+candidateStoreId]" sap:VirtualizedContainerService.HintSize="258,70" sap2010:WorkflowViewState.IdRef="HttpClient_8" Method="PUT" TimeoutMS="6000">
                       <ui:HttpClient.Attachments>
@@ -525,27 +530,13 @@
                         <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                       </ui:HttpClient.Headers>
                       <ui:HttpClient.Parameters>
-                        <InArgument x:TypeArguments="x:String" x:Key="name">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="candidateName" />
-                        </InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="mail">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="candidateMail" />
-                        </InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="phone">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="candidatePhone" />
-                        </InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="location">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="candidateLocation" />
-                        </InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="interviewerId">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="interviewerId" />
-                        </InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="hrId">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="hrId" />
-                        </InArgument>
-                        <InArgument x:TypeArguments="x:String" x:Key="status">
-                          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="candidateStoreStatus" />
-                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="name">[candidateName]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="mail">[candidateMail]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="phone">[candidatePhone]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="location">[candidateLocation]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="interviewerId">[interviewerId]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="hrId">[hrId]</InArgument>
+                        <InArgument x:TypeArguments="x:String" x:Key="status">[candidateStoreStatus]</InArgument>
                       </ui:HttpClient.Parameters>
                       <ui:HttpClient.UrlSegments>
                         <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
@@ -554,7 +545,7 @@
                   </Sequence>
                 </If.Then>
                 <If.Else>
-                  <Sequence sap:VirtualizedContainerService.HintSize="300,1566" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                  <Sequence sap:VirtualizedContainerService.HintSize="300,1742" sap2010:WorkflowViewState.IdRef="Sequence_20">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -571,78 +562,61 @@
                       <InvokeMethod.TargetObject>
                         <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                       </InvokeMethod.TargetObject>
-                      <InArgument x:TypeArguments="x:String">
-                        <Literal x:TypeArguments="x:String">mail</Literal>
-                      </InArgument>
-                      <InArgument x:TypeArguments="njl:JToken">
-                        <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="candidateMail" />
-                      </InArgument>
+                      <InArgument x:TypeArguments="x:String">mail</InArgument>
+                      <InArgument x:TypeArguments="njl:JToken">[candidateMail]</InArgument>
                     </InvokeMethod>
                     <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="258,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_12" MethodName="Add">
                       <InvokeMethod.TargetObject>
                         <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                       </InvokeMethod.TargetObject>
-                      <InArgument x:TypeArguments="x:String">
-                        <Literal x:TypeArguments="x:String">phone</Literal>
-                      </InArgument>
-                      <InArgument x:TypeArguments="njl:JToken">
-                        <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="candidatePhone" />
-                      </InArgument>
+                      <InArgument x:TypeArguments="x:String">phone</InArgument>
+                      <InArgument x:TypeArguments="njl:JToken">[candidatePhone]</InArgument>
                     </InvokeMethod>
                     <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="258,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_13" MethodName="Add">
                       <InvokeMethod.TargetObject>
                         <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                       </InvokeMethod.TargetObject>
+                      <InArgument x:TypeArguments="x:String">location</InArgument>
+                      <InArgument x:TypeArguments="njl:JToken">[candidateLocation]</InArgument>
+                    </InvokeMethod>
+                    <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="258,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_28" MethodName="Add">
+                      <InvokeMethod.TargetObject>
+                        <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
+                      </InvokeMethod.TargetObject>
                       <InArgument x:TypeArguments="x:String">
-                        <Literal x:TypeArguments="x:String">location</Literal>
+                        <Literal x:TypeArguments="x:String">title</Literal>
                       </InArgument>
                       <InArgument x:TypeArguments="njl:JToken">
-                        <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="candidateLocation" />
+                        <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="jobTitle" />
                       </InArgument>
                     </InvokeMethod>
                     <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="258,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_14" MethodName="Add">
                       <InvokeMethod.TargetObject>
                         <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                       </InvokeMethod.TargetObject>
-                      <InArgument x:TypeArguments="x:String">
-                        <Literal x:TypeArguments="x:String">interviewerId</Literal>
-                      </InArgument>
-                      <InArgument x:TypeArguments="njl:JToken">
-                        <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="interviewerId" />
-                      </InArgument>
+                      <InArgument x:TypeArguments="x:String">interviewerId</InArgument>
+                      <InArgument x:TypeArguments="njl:JToken">[interviewerId]</InArgument>
                     </InvokeMethod>
                     <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="258,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_15" MethodName="Add">
                       <InvokeMethod.TargetObject>
                         <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                       </InvokeMethod.TargetObject>
-                      <InArgument x:TypeArguments="x:String">
-                        <Literal x:TypeArguments="x:String">hrId</Literal>
-                      </InArgument>
-                      <InArgument x:TypeArguments="njl:JToken">
-                        <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="hrId" />
-                      </InArgument>
+                      <InArgument x:TypeArguments="x:String">hrId</InArgument>
+                      <InArgument x:TypeArguments="njl:JToken">[hrId]</InArgument>
                     </InvokeMethod>
                     <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="258,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_16" MethodName="Add">
                       <InvokeMethod.TargetObject>
                         <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                       </InvokeMethod.TargetObject>
-                      <InArgument x:TypeArguments="x:String">
-                        <Literal x:TypeArguments="x:String">status</Literal>
-                      </InArgument>
-                      <InArgument x:TypeArguments="njl:JToken">
-                        <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="&quot;process&quot;" />
-                      </InArgument>
+                      <InArgument x:TypeArguments="x:String">status</InArgument>
+                      <InArgument x:TypeArguments="njl:JToken">["process"]</InArgument>
                     </InvokeMethod>
                     <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="258,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_26" MethodName="Add">
                       <InvokeMethod.TargetObject>
                         <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                       </InvokeMethod.TargetObject>
-                      <InArgument x:TypeArguments="x:String">
-                        <Literal x:TypeArguments="x:String">roundInterview</Literal>
-                      </InArgument>
-                      <InArgument x:TypeArguments="njl:JToken">
-                        <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="0" />
-                      </InArgument>
+                      <InArgument x:TypeArguments="x:String">roundInterview</InArgument>
+                      <InArgument x:TypeArguments="njl:JToken">[0]</InArgument>
                     </InvokeMethod>
                     <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[candidateCreate.ToString]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="http://localhost:8080/api/v1/candidates" sap:VirtualizedContainerService.HintSize="258,70" sap2010:WorkflowViewState.IdRef="HttpClient_9" Method="POST" TimeoutMS="6000">
                       <ui:HttpClient.Attachments>
@@ -664,9 +638,9 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="704,2443" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="704,2507" sap2010:WorkflowViewState.IdRef="CommentOut_2">
                 <ui:CommentOut.Body>
-                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="668,2364" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="668,2428" sap2010:WorkflowViewState.IdRef="Sequence_18">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -712,13 +686,13 @@
                         <InArgument x:TypeArguments="x:Object">[candidateLocation]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[candidateList]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="606,943" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[candidateList]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="606,975" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="572,828" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="572,860" sap2010:WorkflowViewState.IdRef="Sequence_6">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -729,7 +703,7 @@
                                 <OutArgument x:TypeArguments="x:String">[candidateListRow]</OutArgument>
                               </ui:GetRowItem.Value>
                             </ui:GetRowItem>
-                            <If Condition="[candidateListRow.Equals(candidateMail)]" sap:VirtualizedContainerService.HintSize="510,490" sap2010:WorkflowViewState.IdRef="If_4">
+                            <If Condition="[candidateListRow.Equals(candidateMail)]" sap:VirtualizedContainerService.HintSize="510,522" sap2010:WorkflowViewState.IdRef="If_4">
                               <If.Then>
                                 <Sequence sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                   <sap:WorkflowViewStateService.ViewState>
@@ -769,7 +743,7 @@
                         </ActivityAction>
                       </ui:ForEachRow.Body>
                     </ui:ForEachRow>
-                    <If Condition="[isCandidateExist]" sap:VirtualizedContainerService.HintSize="606,660" sap2010:WorkflowViewState.IdRef="If_5">
+                    <If Condition="[isCandidateExist]" sap:VirtualizedContainerService.HintSize="606,692" sap2010:WorkflowViewState.IdRef="If_5">
                       <If.Then>
                         <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_9">
                           <sap:WorkflowViewStateService.ViewState>
@@ -871,15 +845,15 @@
                   </InArgument>
                 </umab:GmailApplicationCard.ClientSecret>
               </umab:GmailApplicationCard>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="704,500" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="704,532" sap2010:WorkflowViewState.IdRef="CommentOut_3">
                 <ui:CommentOut.Body>
-                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,421" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,453" sap2010:WorkflowViewState.IdRef="Sequence_25">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If Condition="[isProcessCV.ToLower.Equals(&quot;yes&quot;) = true]" sap:VirtualizedContainerService.HintSize="388,310" sap2010:WorkflowViewState.IdRef="If_3">
+                    <If Condition="[isProcessCV.ToLower.Equals(&quot;yes&quot;) = true]" sap:VirtualizedContainerService.HintSize="388,342" sap2010:WorkflowViewState.IdRef="If_3">
                       <If.Then>
                         <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_1">
                           <sap:WorkflowViewStateService.ViewState>
@@ -964,13 +938,13 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:DeserializeJsonArray>
-        <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="510,1261" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[taskResArr]">
+        <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="510,1372" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[taskResArr]">
           <ui:ForEach.Body>
             <ActivityAction x:TypeArguments="njl:JToken">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="njl:JToken" Name="task" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,1064" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,1186" sap2010:WorkflowViewState.IdRef="Sequence_13">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1008,6 +982,14 @@
                     <InArgument x:TypeArguments="x:String">[task.SelectToken("hrId").ToString]</InArgument>
                   </Assign.Value>
                 </Assign>
+                <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_41">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[taskJobTitle]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[task.SelectToken("jobTitle").ToString]</InArgument>
+                  </Assign.Value>
+                </Assign>
                 <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="434,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" MethodName="Add">
                   <InvokeMethod.TargetObject>
                     <InArgument x:TypeArguments="njl:JObject">[taskObj]</InArgument>
@@ -1019,8 +1001,12 @@
                   <InvokeMethod.TargetObject>
                     <InArgument x:TypeArguments="njl:JObject">[taskObj]</InArgument>
                   </InvokeMethod.TargetObject>
-                  <InArgument x:TypeArguments="x:String">value</InArgument>
-                  <InArgument x:TypeArguments="njl:JToken">[taskInterviewerId+"|"+taskHrId]</InArgument>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String">value</Literal>
+                  </InArgument>
+                  <InArgument x:TypeArguments="njl:JToken">
+                    <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="taskInterviewerId+&quot;|&quot;+taskHrId+&quot;|&quot;+taskJobTitle" />
+                  </InArgument>
                 </InvokeMethod>
                 <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="434,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" MethodName="Add">
                   <InvokeMethod.TargetObject>
@@ -1039,7 +1025,7 @@
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">530,129.5</av:Point>
               <av:Size x:Key="ShapeSize">200,81</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">630,210.5 630,240.5 449,240.5 449,279</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">630,210.5 630,240.5 411,240.5 411,279</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Sequence sap:VirtualizedContainerService.HintSize="200,81" sap2010:WorkflowViewState.IdRef="Sequence_24">
@@ -1082,7 +1068,7 @@
                 <InArgument x:TypeArguments="x:Int32">[candidate_array.Count]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="510,1627" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[candidate_array]">
+            <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="510,1616" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[candidate_array]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="njl:JToken">
                   <ActivityAction.Argument>

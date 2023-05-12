@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1049,4898</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1049,5541</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SendStarterLetter_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="51">
@@ -127,13 +127,13 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="832,4833" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence sap:VirtualizedContainerService.HintSize="851,5476" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Flowchart DisplayName="SendStarterLetter" sap:VirtualizedContainerService.HintSize="789,4894" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart DisplayName="SendStarterLetter" sap:VirtualizedContainerService.HintSize="789,5365" sap2010:WorkflowViewState.IdRef="Flowchart_1">
       <Flowchart.Variables>
         <Variable x:TypeArguments="x:String" Name="starterLetterForm" />
         <Variable x:TypeArguments="njl:JObject" Name="starterLetterFormJson" />
@@ -167,7 +167,7 @@
           <av:Size x:Key="ShapeSize">60,75</av:Size>
           <x:Double x:Key="Width">755</x:Double>
           <av:PointCollection x:Key="ConnectorLocation">330,40 360,40 360,50 460,50</av:PointCollection>
-          <x:Double x:Key="Height">4857</x:Double>
+          <x:Double x:Key="Height">5328</x:Double>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Flowchart.StartNode>
@@ -177,7 +177,7 @@
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">25,143</av:Point>
-            <av:Size x:Key="ShapeSize">632,4657</av:Size>
+            <av:Size x:Key="ShapeSize">632,5185</av:Size>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <ufa:FormActivity CreateFormActivityFileName="{x:Null}" CreateFormActivityFilePath="{x:Null}" Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormHeight="{x:Null}" FormTitle="{x:Null}" FormWidth="{x:Null}" IconPath="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" CreateFormId="7ebd90ee-5900-412c-8ce7-42bde406d468" DevTools="False" DisableMaximizeButton="False" DisableMinimizeButton="False" DisableSanitize="False" DisplayName="Create Form" EnableAccessibility="False" FormFieldsOutputData="[starterLetterForm]" FormSchema="%[{&quot;label&quot;:&quot;Select Candidate&quot;,&quot;tableView&quot;:true,&quot;data&quot;:{&quot;values&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;value&quot;:&quot;&quot;}]},&quot;validate&quot;:{&quot;required&quot;:true,&quot;onlyAvailableItems&quot;:false},&quot;key&quot;:&quot;selectCandidate&quot;,&quot;type&quot;:&quot;select&quot;,&quot;indexeddb&quot;:{&quot;filter&quot;:{}},&quot;input&quot;:true},{&quot;label&quot;:&quot;Select File&quot;,&quot;customClass&quot;:&quot;filePath&quot;,&quot;showAllFileTypes&quot;:true,&quot;validate&quot;:{&quot;required&quot;:true},&quot;key&quot;:&quot;selectFile&quot;,&quot;input&quot;:true,&quot;suffix&quot;:&quot;Select &quot;,&quot;tableView&quot;:true,&quot;type&quot;:&quot;filePath&quot;},{&quot;label&quot;:&quot;Profile Contactor&quot;,&quot;tableView&quot;:true,&quot;validate&quot;:{&quot;required&quot;:true},&quot;key&quot;:&quot;profileContactor&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;tableView&quot;:false}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100120&quot;,&quot;Name&quot;:&quot;Default&quot;,&quot;BaseCss&quot;:&quot;./assets/css/themes/uipath.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;./assets/themeicons/uipath.png&quot;,&quot;OverrideCssUrl&quot;:&quot;./assets/css/themes/uipath.custom.css&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="632,5185" sap2010:WorkflowViewState.IdRef="FormActivity_1" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="True" StartAsMinimized="False">
@@ -309,7 +309,7 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[&quot;&#xD;&#xA;Dear &quot;+candidateNameParsed+&quot;,&#xD;&#xA;&#xD;&#xA;I send back some basic information for new employees such as during the onboard session (attached file).&#xD;&#xA;In addition, I have attached a handbook with more detail overview of VNG's benefit and a map of meeting rooms at VNG Campus.&#xD;&#xA;Please refer to it for more information.&#xD;&#xA;&#xD;&#xA;Note: Some procedures, you need to do on first day/week of employment.&#xD;&#xA;&#xD;&#xA;&#x9;1. Update personal information on mysite: &quot;+companySiteParsed+&quot;.&#xD;&#xA;&#x9;2. View company policy: &quot;+companyPolicyParsed+&quot;&#xD;&#xA;&#x9;3. Personal profile: For those of you who have not yet submitted a complete profile, please send addition&#xD;&#xA;documents to &quot;+profileContactorParsed+&quot; at VNG Campus (HR room opposite the Coffee House, enter the door on the left)&#xD;&#xA;within 5 working day from the date of employment.&#xD;&#xA;&#xD;&#xA;Regards,&#xD;&#xA;&quot;]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,646" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Starter Letter" To="[candidateMailParsed]" UseDocumentAsBody="False">
+                        <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[&quot;&#xA;Dear &quot;+candidateNameParsed+&quot;,&#xA;&#xA;I send back some basic information for new employees such as during the onboard session (attached file).&#xA;In addition, I have attached a handbook with more detail overview of VNG's benefit and a map of meeting rooms at VNG Campus.&#xA;Please refer to it for more information.&#xA;&#xA;Note: Some procedures, you need to do on first day/week of employment.&#xA;&#xA;&#x9;1. Update personal information on mysite: &quot;+companySiteParsed+&quot;.&#xA;&#x9;2. View company policy: &quot;+companyPolicyParsed+&quot;&#xA;&#x9;3. Personal profile: For those of you who have not yet submitted a complete profile, please send addition&#xA;documents to &quot;+profileContactorParsed+&quot; at VNG Campus (HR room opposite the Coffee House, enter the door on the left)&#xA;within 5 working day from the date of employment.&#xA;&#xA;Regards,&#xA;&quot;]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,646" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Starter Letter" To="[candidateMailParsed]" UseDocumentAsBody="False">
                           <umab:SendMailX.Files>
                             <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
                               <InArgument x:TypeArguments="x:String">[fileParsed]</InArgument>
@@ -380,12 +380,8 @@
                   <InvokeMethod.TargetObject>
                     <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                   </InvokeMethod.TargetObject>
-                  <InArgument x:TypeArguments="x:String">
-                    <Literal x:TypeArguments="x:String">title</Literal>
-                  </InArgument>
-                  <InArgument x:TypeArguments="njl:JToken">
-                    <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="candidateUpdateObj.SelectToken(&quot;title&quot;).ToString" />
-                  </InArgument>
+                  <InArgument x:TypeArguments="x:String">title</InArgument>
+                  <InArgument x:TypeArguments="njl:JToken">[candidateUpdateObj.SelectToken("title").ToString]</InArgument>
                 </InvokeMethod>
                 <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="532,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_8" MethodName="Add">
                   <InvokeMethod.TargetObject>
@@ -412,34 +408,22 @@
                   <InvokeMethod.TargetObject>
                     <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                   </InvokeMethod.TargetObject>
-                  <InArgument x:TypeArguments="x:String">
-                    <Literal x:TypeArguments="x:String">roundInterview</Literal>
-                  </InArgument>
-                  <InArgument x:TypeArguments="njl:JToken">
-                    <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="candidateUpdateObj.SelectToken(&quot;roundInterview&quot;).ToString" />
-                  </InArgument>
+                  <InArgument x:TypeArguments="x:String">roundInterview</InArgument>
+                  <InArgument x:TypeArguments="njl:JToken">[candidateUpdateObj.SelectToken("roundInterview").ToString]</InArgument>
                 </InvokeMethod>
                 <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="532,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_12" MethodName="Add">
                   <InvokeMethod.TargetObject>
                     <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                   </InvokeMethod.TargetObject>
-                  <InArgument x:TypeArguments="x:String">
-                    <Literal x:TypeArguments="x:String">startDate</Literal>
-                  </InArgument>
-                  <InArgument x:TypeArguments="njl:JToken">
-                    <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="candidateUpdateObj.SelectToken(&quot;startDate&quot;).ToString" />
-                  </InArgument>
+                  <InArgument x:TypeArguments="x:String">startDate</InArgument>
+                  <InArgument x:TypeArguments="njl:JToken">[candidateUpdateObj.SelectToken("startDate").ToString]</InArgument>
                 </InvokeMethod>
                 <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="532,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_13" MethodName="Add">
                   <InvokeMethod.TargetObject>
                     <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                   </InvokeMethod.TargetObject>
-                  <InArgument x:TypeArguments="x:String">
-                    <Literal x:TypeArguments="x:String">jobLocation</Literal>
-                  </InArgument>
-                  <InArgument x:TypeArguments="njl:JToken">
-                    <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="candidateUpdateObj.SelectToken(&quot;jobLocation&quot;).ToString" />
-                  </InArgument>
+                  <InArgument x:TypeArguments="x:String">jobLocation</InArgument>
+                  <InArgument x:TypeArguments="njl:JToken">[candidateUpdateObj.SelectToken("jobLocation").ToString]</InArgument>
                 </InvokeMethod>
                 <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[candidateCreate.ToString]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[&quot;http://localhost:8080/api/v1/candidates/&quot;+candidateIdParsed]" sap:VirtualizedContainerService.HintSize="532,70" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="PUT" Result="[candidateUpdate]" TimeoutMS="6000">
                   <ui:HttpClient.Attachments>

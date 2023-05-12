@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1049,4144</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1049,4808</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SendOfferLetter_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="40">
@@ -245,7 +245,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[&quot;&#xD;&#xA;Dear &quot;+candidateNameParsed+&quot;,&#xD;&#xA;&#xD;&#xA;Firstly, we would like to say thank you for your interest in our career opportunity and also for your time spent to discuss the role with us.&#xD;&#xA;&#xD;&#xA;Congratulations! It is our pleasure to offer you employment at &quot;+companyNameParsed+&quot; Company (&quot;+companyNameParsed+&quot; Company is one of the subsidiaries of VNG Corporation). Please find the offer information as below:&#xD;&#xA;&#xD;&#xA;• Title: &quot;+candidateTitleParsed+&quot;&#xD;&#xA;• Report to: &quot;+reportToParsed+&quot;&#xD;&#xA;• Expected Start Date: &quot;+startDateParsed+&quot;&#xD;&#xA;&#xD;&#xA;Attachments are your offer letter for official employees at &quot;+companyNameParsed+&quot; Company. Please let me know if you have any questions or would like to discuss the offer in more detail.&#xD;&#xA;&#xD;&#xA;We would be thrilled to welcome you to the team!&#xD;&#xA;&#xD;&#xA;Thank you &amp; Best Regards,&#xD;&#xA;&quot;]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,646" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Offer Letter" To="[candidateMailParsed]" UseDocumentAsBody="False">
+                      <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[&quot;&#xA;Dear &quot;+candidateNameParsed+&quot;,&#xA;&#xA;Firstly, we would like to say thank you for your interest in our career opportunity and also for your time spent to discuss the role with us.&#xA;&#xA;Congratulations! It is our pleasure to offer you employment at &quot;+companyNameParsed+&quot; Company (&quot;+companyNameParsed+&quot; Company is one of the subsidiaries of VNG Corporation). Please find the offer information as below:&#xA;&#xA;• Title: &quot;+candidateTitleParsed+&quot;&#xA;• Report to: &quot;+reportToParsed+&quot;&#xA;• Expected Start Date: &quot;+startDateParsed+&quot;&#xA;&#xA;Attachments are your offer letter for official employees at &quot;+companyNameParsed+&quot; Company. Please let me know if you have any questions or would like to discuss the offer in more detail.&#xA;&#xA;We would be thrilled to welcome you to the team!&#xA;&#xA;Thank you &amp; Best Regards,&#xA;&quot;]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,646" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Offer Letter" To="[candidateMailParsed]" UseDocumentAsBody="False">
                         <umab:SendMailX.Files>
                           <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
                             <InArgument x:TypeArguments="x:String">[offerLetterAttachParsed]</InArgument>
@@ -321,12 +321,8 @@
                 <InvokeMethod.TargetObject>
                   <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                 </InvokeMethod.TargetObject>
-                <InArgument x:TypeArguments="x:String">
-                  <Literal x:TypeArguments="x:String">title</Literal>
-                </InArgument>
-                <InArgument x:TypeArguments="njl:JToken">
-                  <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="candidateUpdateObj.SelectToken(&quot;title&quot;).ToString" />
-                </InArgument>
+                <InArgument x:TypeArguments="x:String">title</InArgument>
+                <InArgument x:TypeArguments="njl:JToken">[candidateUpdateObj.SelectToken("title").ToString]</InArgument>
               </InvokeMethod>
               <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="532,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_8" MethodName="Add">
                 <InvokeMethod.TargetObject>
@@ -360,12 +356,8 @@
                 <InvokeMethod.TargetObject>
                   <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                 </InvokeMethod.TargetObject>
-                <InArgument x:TypeArguments="x:String">
-                  <Literal x:TypeArguments="x:String">startDate</Literal>
-                </InArgument>
-                <InArgument x:TypeArguments="njl:JToken">
-                  <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="startDateParsed" />
-                </InArgument>
+                <InArgument x:TypeArguments="x:String">startDate</InArgument>
+                <InArgument x:TypeArguments="njl:JToken">[startDateParsed]</InArgument>
               </InvokeMethod>
               <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[candidateCreate.ToString]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[&quot;http://localhost:8080/api/v1/candidates/&quot;+candidateIdParsed]" sap:VirtualizedContainerService.HintSize="532,70" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="PUT" Result="[candidateUpdate]" TimeoutMS="6000">
                 <ui:HttpClient.Attachments>
@@ -551,12 +543,8 @@
                         <InvokeMethod.TargetObject>
                           <InArgument x:TypeArguments="njl:JObject">[candidate_obj]</InArgument>
                         </InvokeMethod.TargetObject>
-                        <InArgument x:TypeArguments="x:String">
-                          <Literal x:TypeArguments="x:String">value</Literal>
-                        </InArgument>
-                        <InArgument x:TypeArguments="njl:JToken">
-                          <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="candidate_name+&quot;|&quot;+candidate_mail+&quot;|&quot;+candidate_interviewer_id+&quot;|&quot;+candidate_hr_id+&quot;|&quot;+candidate_id+&quot;|&quot;+candidate_status+&quot;|&quot;+candidate_title" />
-                        </InArgument>
+                        <InArgument x:TypeArguments="x:String">value</InArgument>
+                        <InArgument x:TypeArguments="njl:JToken">[candidate_name+"|"+candidate_mail+"|"+candidate_interviewer_id+"|"+candidate_hr_id+"|"+candidate_id+"|"+candidate_status+"|"+candidate_title]</InArgument>
                       </InvokeMethod>
                       <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="258,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" MethodName="Add">
                         <InvokeMethod.TargetObject>

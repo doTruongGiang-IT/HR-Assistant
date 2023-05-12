@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1049,11169</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1049,11696</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessCV_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="79">
@@ -175,7 +175,7 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="ProcessCV" sap:VirtualizedContainerService.HintSize="1014,11578" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="ProcessCV" sap:VirtualizedContainerService.HintSize="1014,11715" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:String" Name="selectedCv" />
       <Variable x:TypeArguments="x:String" Name="candidateCv" />
@@ -241,7 +241,7 @@
         <av:Size x:Key="ShapeSize">60,75</av:Size>
         <av:PointCollection x:Key="ConnectorLocation">360,77.5 360,107.5 370,107.5 370,139.5</av:PointCollection>
         <x:Double x:Key="Width">980</x:Double>
-        <x:Double x:Key="Height">11541</x:Double>
+        <x:Double x:Key="Height">11678</x:Double>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
@@ -251,13 +251,13 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">9,279</av:Point>
-          <av:Size x:Key="ShapeSize">804,11262</av:Size>
+          <av:Size x:Key="ShapeSize">804,11392</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ufa:FormActivity CreateFormActivityFileName="{x:Null}" CreateFormActivityFilePath="{x:Null}" Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormTitle="{x:Null}" IconPath="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" CreateFormId="24928006-9163-42e3-b18b-91523d975d83" DevTools="False" DisableMaximizeButton="False" DisableMinimizeButton="False" DisableSanitize="False" DisplayName="Create Form" EnableAccessibility="False" FormFieldsOutputData="[devMail]" FormHeight="400" FormSchema="%[{&quot;label&quot;:&quot;Select Job&quot;,&quot;tableView&quot;:true,&quot;data&quot;:{&quot;values&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;value&quot;:&quot;&quot;}]},&quot;validate&quot;:{&quot;required&quot;:true,&quot;onlyAvailableItems&quot;:false},&quot;key&quot;:&quot;selectJob&quot;,&quot;type&quot;:&quot;select&quot;,&quot;indexeddb&quot;:{&quot;filter&quot;:{}},&quot;input&quot;:true},{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;tableView&quot;:false}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100120&quot;,&quot;Name&quot;:&quot;Default&quot;,&quot;BaseCss&quot;:&quot;./assets/css/themes/uipath.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;./assets/themeicons/uipath.png&quot;,&quot;OverrideCssUrl&quot;:&quot;./assets/css/themes/uipath.custom.css&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" FormWidth="800" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="804,11262" sap2010:WorkflowViewState.IdRef="FormActivity_3" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="True" StartAsMinimized="False">
+      <ufa:FormActivity CreateFormActivityFileName="{x:Null}" CreateFormActivityFilePath="{x:Null}" Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormTitle="{x:Null}" IconPath="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" CreateFormId="24928006-9163-42e3-b18b-91523d975d83" DevTools="False" DisableMaximizeButton="False" DisableMinimizeButton="False" DisableSanitize="False" DisplayName="Create Form" EnableAccessibility="False" FormFieldsOutputData="[devMail]" FormHeight="400" FormSchema="%[{&quot;label&quot;:&quot;Select Job&quot;,&quot;tableView&quot;:true,&quot;data&quot;:{&quot;values&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;value&quot;:&quot;&quot;}]},&quot;validate&quot;:{&quot;required&quot;:true,&quot;onlyAvailableItems&quot;:false},&quot;key&quot;:&quot;selectJob&quot;,&quot;type&quot;:&quot;select&quot;,&quot;indexeddb&quot;:{&quot;filter&quot;:{}},&quot;input&quot;:true},{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;tableView&quot;:false}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100120&quot;,&quot;Name&quot;:&quot;Default&quot;,&quot;BaseCss&quot;:&quot;./assets/css/themes/uipath.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;./assets/themeicons/uipath.png&quot;,&quot;OverrideCssUrl&quot;:&quot;./assets/css/themes/uipath.custom.css&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" FormWidth="800" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="804,11392" sap2010:WorkflowViewState.IdRef="FormActivity_3" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="True" StartAsMinimized="False">
         <ufa:FormActivity.Body>
           <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="766,11135" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="766,11265" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -300,6 +300,7 @@
                   </Sequence>
                 </ui:CommentOut.Body>
               </ui:CommentOut>
+              <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="704,90" sap2010:WorkflowViewState.IdRef="Delay_2" />
               <ui:SelectFile DisplayName="Browse For File" Filter="PDF|*.pdf" sap:VirtualizedContainerService.HintSize="704,138" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[candidateCv]" />
               <Assign sap:VirtualizedContainerService.HintSize="704,82" sap2010:WorkflowViewState.IdRef="Assign_3">
                 <Assign.To>
@@ -484,12 +485,8 @@
                       <InvokeMethod.TargetObject>
                         <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                       </InvokeMethod.TargetObject>
-                      <InArgument x:TypeArguments="x:String">
-                        <Literal x:TypeArguments="x:String">title</Literal>
-                      </InArgument>
-                      <InArgument x:TypeArguments="njl:JToken">
-                        <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="jobTitle" />
-                      </InArgument>
+                      <InArgument x:TypeArguments="x:String">title</InArgument>
+                      <InArgument x:TypeArguments="njl:JToken">[jobTitle]</InArgument>
                     </InvokeMethod>
                     <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="258,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_21" MethodName="Add">
                       <InvokeMethod.TargetObject>
@@ -583,12 +580,8 @@
                       <InvokeMethod.TargetObject>
                         <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                       </InvokeMethod.TargetObject>
-                      <InArgument x:TypeArguments="x:String">
-                        <Literal x:TypeArguments="x:String">title</Literal>
-                      </InArgument>
-                      <InArgument x:TypeArguments="njl:JToken">
-                        <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="jobTitle" />
-                      </InArgument>
+                      <InArgument x:TypeArguments="x:String">title</InArgument>
+                      <InArgument x:TypeArguments="njl:JToken">[jobTitle]</InArgument>
                     </InvokeMethod>
                     <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="258,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_14" MethodName="Add">
                       <InvokeMethod.TargetObject>
@@ -1001,12 +994,8 @@
                   <InvokeMethod.TargetObject>
                     <InArgument x:TypeArguments="njl:JObject">[taskObj]</InArgument>
                   </InvokeMethod.TargetObject>
-                  <InArgument x:TypeArguments="x:String">
-                    <Literal x:TypeArguments="x:String">value</Literal>
-                  </InArgument>
-                  <InArgument x:TypeArguments="njl:JToken">
-                    <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="taskInterviewerId+&quot;|&quot;+taskHrId+&quot;|&quot;+taskJobTitle" />
-                  </InArgument>
+                  <InArgument x:TypeArguments="x:String">value</InArgument>
+                  <InArgument x:TypeArguments="njl:JToken">[taskInterviewerId+"|"+taskHrId+"|"+taskJobTitle]</InArgument>
                 </InvokeMethod>
                 <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="434,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" MethodName="Add">
                   <InvokeMethod.TargetObject>

@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1049,2255</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1049,4148</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SendSorryLetter_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="49">
@@ -132,24 +132,20 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="759,2190" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence sap:VirtualizedContainerService.HintSize="759,4083" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Flowchart DisplayName="SendSorryLetter" sap:VirtualizedContainerService.HintSize="697,3444" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart DisplayName="SendSorryLetter" sap:VirtualizedContainerService.HintSize="697,3972" sap2010:WorkflowViewState.IdRef="Flowchart_1">
       <Flowchart.Variables>
         <Variable x:TypeArguments="x:String" Name="sorryLetterForm" />
         <Variable x:TypeArguments="njl:JObject" Name="sorryLetterFormJson" />
         <Variable x:TypeArguments="x:String" Name="candidateNameParsed" />
         <Variable x:TypeArguments="x:String" Name="candidateMailParsed" />
         <Variable x:TypeArguments="njl:JArray" Default="[new JArray()]" Name="candidate_list_obj" />
-        <Variable x:TypeArguments="njl:JObject" Name="candidateCreate">
-          <Variable.Default>
-            <VisualBasicValue x:TypeArguments="njl:JObject" ExpressionText="new JObject()" />
-          </Variable.Default>
-        </Variable>
+        <Variable x:TypeArguments="njl:JObject" Default="[new JObject()]" Name="candidateCreate" />
       </Flowchart.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -158,7 +154,7 @@
           <av:Size x:Key="ShapeSize">60,75</av:Size>
           <x:Double x:Key="Width">663</x:Double>
           <av:PointCollection x:Key="ConnectorLocation">330,40 360,40 360,50 460,50</av:PointCollection>
-          <x:Double x:Key="Height">3407</x:Double>
+          <x:Double x:Key="Height">3935</x:Double>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Flowchart.StartNode>
@@ -168,13 +164,13 @@
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">5,142.99999999999997</av:Point>
-            <av:Size x:Key="ShapeSize">630,3264</av:Size>
+            <av:Size x:Key="ShapeSize">630,3792</av:Size>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ufa:FormActivity CreateFormActivityFileName="{x:Null}" CreateFormActivityFilePath="{x:Null}" Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormHeight="{x:Null}" FormTitle="{x:Null}" FormWidth="{x:Null}" IconPath="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" CreateFormId="52615628-41b7-4d11-a469-9e6ad4c7c96d" DevTools="False" DisableMaximizeButton="False" DisableMinimizeButton="False" DisableSanitize="False" DisplayName="Create Form" EnableAccessibility="False" FormFieldsOutputData="[sorryLetterForm]" FormSchema="%[{&quot;label&quot;:&quot;Select Candidate&quot;,&quot;tableView&quot;:true,&quot;data&quot;:{&quot;values&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;value&quot;:&quot;&quot;}]},&quot;validate&quot;:{&quot;onlyAvailableItems&quot;:false},&quot;key&quot;:&quot;selectCandidate&quot;,&quot;type&quot;:&quot;select&quot;,&quot;indexeddb&quot;:{&quot;filter&quot;:{}},&quot;input&quot;:true},{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;tableView&quot;:false}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100120&quot;,&quot;Name&quot;:&quot;Default&quot;,&quot;BaseCss&quot;:&quot;./assets/css/themes/uipath.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;./assets/themeicons/uipath.png&quot;,&quot;OverrideCssUrl&quot;:&quot;./assets/css/themes/uipath.custom.css&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="630,3264" sap2010:WorkflowViewState.IdRef="FormActivity_1" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="True" StartAsMinimized="False">
+        <ufa:FormActivity CreateFormActivityFileName="{x:Null}" CreateFormActivityFilePath="{x:Null}" Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormHeight="{x:Null}" FormTitle="{x:Null}" FormWidth="{x:Null}" IconPath="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" CreateFormId="52615628-41b7-4d11-a469-9e6ad4c7c96d" DevTools="False" DisableMaximizeButton="False" DisableMinimizeButton="False" DisableSanitize="False" DisplayName="Create Form" EnableAccessibility="False" FormFieldsOutputData="[sorryLetterForm]" FormSchema="%[{&quot;label&quot;:&quot;Select Candidate&quot;,&quot;tableView&quot;:true,&quot;data&quot;:{&quot;values&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;value&quot;:&quot;&quot;}]},&quot;validate&quot;:{&quot;required&quot;:true,&quot;onlyAvailableItems&quot;:false},&quot;key&quot;:&quot;selectCandidate&quot;,&quot;type&quot;:&quot;select&quot;,&quot;indexeddb&quot;:{&quot;filter&quot;:{}},&quot;input&quot;:true},{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;tableView&quot;:false}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100120&quot;,&quot;Name&quot;:&quot;Default&quot;,&quot;BaseCss&quot;:&quot;./assets/css/themes/uipath.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;./assets/themeicons/uipath.png&quot;,&quot;OverrideCssUrl&quot;:&quot;./assets/css/themes/uipath.custom.css&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="630,3792" sap2010:WorkflowViewState.IdRef="FormActivity_1" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="True" StartAsMinimized="False">
           <ufa:FormActivity.Body>
             <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,3137" sap2010:WorkflowViewState.IdRef="Sequence_1">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,3665" sap2010:WorkflowViewState.IdRef="Sequence_1">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="candidateIdParsed" />
                   <Variable x:TypeArguments="x:String" Name="candidateUpdate" />
@@ -287,6 +283,17 @@
                   <InArgument x:TypeArguments="x:String">location</InArgument>
                   <InArgument x:TypeArguments="njl:JToken">[candidateUpdateObj.SelectToken("location").ToString]</InArgument>
                 </InvokeMethod>
+                <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="530,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_12" MethodName="Add">
+                  <InvokeMethod.TargetObject>
+                    <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
+                  </InvokeMethod.TargetObject>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String">title</Literal>
+                  </InArgument>
+                  <InArgument x:TypeArguments="njl:JToken">
+                    <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="candidateUpdateObj.SelectToken(&quot;title&quot;).ToString" />
+                  </InArgument>
+                </InvokeMethod>
                 <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="530,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_8" MethodName="Add">
                   <InvokeMethod.TargetObject>
                     <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
@@ -305,22 +312,32 @@
                   <InvokeMethod.TargetObject>
                     <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                   </InvokeMethod.TargetObject>
-                  <InArgument x:TypeArguments="x:String">
-                    <Literal x:TypeArguments="x:String">status</Literal>
-                  </InArgument>
-                  <InArgument x:TypeArguments="njl:JToken">
-                    <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="&quot;fail&quot;" />
-                  </InArgument>
+                  <InArgument x:TypeArguments="x:String">status</InArgument>
+                  <InArgument x:TypeArguments="njl:JToken">["fail"]</InArgument>
                 </InvokeMethod>
                 <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="530,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_11" MethodName="Add">
                   <InvokeMethod.TargetObject>
                     <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
                   </InvokeMethod.TargetObject>
+                  <InArgument x:TypeArguments="x:String">roundInterview</InArgument>
+                  <InArgument x:TypeArguments="njl:JToken">[candidateUpdateObj.SelectToken("roundInterview").ToString]</InArgument>
+                </InvokeMethod>
+                <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="530,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_13" MethodName="Add">
+                  <InvokeMethod.TargetObject>
+                    <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
+                  </InvokeMethod.TargetObject>
+                  <InArgument x:TypeArguments="x:String">startDate</InArgument>
+                  <InArgument x:TypeArguments="njl:JToken">[candidateUpdateObj.SelectToken("startDate").ToString]</InArgument>
+                </InvokeMethod>
+                <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="530,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_14" MethodName="Add">
+                  <InvokeMethod.TargetObject>
+                    <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
+                  </InvokeMethod.TargetObject>
                   <InArgument x:TypeArguments="x:String">
-                    <Literal x:TypeArguments="x:String">roundInterview</Literal>
+                    <Literal x:TypeArguments="x:String">jobLocation</Literal>
                   </InArgument>
                   <InArgument x:TypeArguments="njl:JToken">
-                    <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="candidateUpdateObj.SelectToken(&quot;roundInterview&quot;).ToString" />
+                    <VisualBasicValue x:TypeArguments="njl:JToken" ExpressionText="candidateUpdateObj.SelectToken(&quot;jobLocation&quot;).ToString" />
                   </InArgument>
                 </InvokeMethod>
                 <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[candidateCreate.ToString]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[&quot;http://localhost:8080/api/v1/candidates/&quot;+candidateIdParsed]" sap:VirtualizedContainerService.HintSize="530,70" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="PUT" Result="[candidateUpdate]" TimeoutMS="6000">

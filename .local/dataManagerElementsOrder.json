@@ -290,9 +290,30 @@
     {
       "Path": "SendSorryLetter.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": null,
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
+      "VariablesSectionElementsOrder": [
+        "sorryLetterForm&Flowchart_1",
+        "sorryLetterFormJson&Flowchart_1",
+        "candidateNameParsed&Flowchart_1",
+        "candidateMailParsed&Flowchart_1",
+        "candidate_list_obj&Flowchart_1",
+        "candidateCreate&Flowchart_1",
+        "candidate_res&Sequence_10",
+        "candidate_array&Sequence_10",
+        "candidate_obj&Sequence_10",
+        "candidate_id&Sequence_9",
+        "candidate_name&Sequence_9",
+        "candidate_mail&Sequence_9",
+        "candidate_interviewer_id&Sequence_9",
+        "candidate_hr_id&Sequence_9",
+        "candidate_status&Sequence_9",
+        "candidateIdParsed&Sequence_1",
+        "candidateUpdate&Sequence_1",
+        "candidateUpdateObj&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "candidateList"
+      ],
+      "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
@@ -381,6 +402,9 @@
       "Path": "ScreeningCV.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "interviewerName_parsed&Flowchart_1",
+        "jobTitle&Flowchart_1",
+        "taskJobTitle&Flowchart_1",
         "subjectRegexForCandidate&Flowchart_1",
         "mailList&Flowchart_1",
         "job_list&Flowchart_1",

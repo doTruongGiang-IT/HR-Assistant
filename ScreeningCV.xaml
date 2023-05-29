@@ -243,6 +243,8 @@
       <Variable x:TypeArguments="x:String" Name="taskJobTitle" />
       <Variable x:TypeArguments="x:String" Name="jobTitle" />
       <Variable x:TypeArguments="x:String" Name="interviewerName_parsed" />
+      <Variable x:TypeArguments="x:String" Name="taskId" />
+      <Variable x:TypeArguments="x:String" Name="candidateJobId" />
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -264,13 +266,13 @@
           <av:Size x:Key="ShapeSize">253,79</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <umab:GmailApplicationCard Account="{x:Null}" ClientId="{x:Null}" ClientSecret="{x:Null}" EmailAddress="{x:Null}" ConnectionAccountName="ctyhopmail@gmail.com" ConnectionId="f33ab712-e8ff-4e4d-8240-6fa9d3a764f7" DisplayName="Use Gmail" sap:VirtualizedContainerService.HintSize="1144,23666" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_1" Timeout="90" UseConnectionService="True">
+      <umab:GmailApplicationCard Account="{x:Null}" ClientId="{x:Null}" ClientSecret="{x:Null}" EmailAddress="{x:Null}" ConnectionAccountName="ctyhopmail@gmail.com" ConnectionId="f33ab712-e8ff-4e4d-8240-6fa9d3a764f7" DisplayName="Use Gmail" sap:VirtualizedContainerService.HintSize="1144,24140" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_1" Timeout="90" UseConnectionService="True">
         <umab:GmailApplicationCard.Body>
           <ActivityAction x:TypeArguments="um:IMailQuickHandle">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Gmail" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="1110,23486" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence sap:VirtualizedContainerService.HintSize="1110,23960" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -318,19 +320,19 @@
                   <scg:Dictionary x:TypeArguments="x:String, Argument" />
                 </ufa:FormActivity.FormFieldsCollection>
               </ufa:FormActivity>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1048,22693" sap2010:WorkflowViewState.IdRef="Sequence_139">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1048,23167" sap2010:WorkflowViewState.IdRef="Sequence_139">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="986,22582" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[taskObjFormat]">
+                <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="986,23056" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[taskObjFormat]">
                   <ui:ForEach.Body>
                     <ActivityAction x:TypeArguments="njl:JToken">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="njl:JToken" Name="task" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="952,22396" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="952,22870" sap2010:WorkflowViewState.IdRef="Sequence_18">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -360,6 +362,14 @@
                             <InArgument x:TypeArguments="x:String">[task.SelectToken("value").ToString.Split("|").GetValue(1).ToString]</InArgument>
                           </Assign.Value>
                         </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="910,82" sap2010:WorkflowViewState.IdRef="Assign_126">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[candidateJobId]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[task.SelectToken("value").ToString.Split("|").GetValue(3).ToString]</InArgument>
+                          </Assign.Value>
+                        </Assign>
                         <Assign sap:VirtualizedContainerService.HintSize="910,82" sap2010:WorkflowViewState.IdRef="Assign_123">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[jobTitle]</OutArgument>
@@ -368,7 +378,7 @@
                             <InArgument x:TypeArguments="x:String">[task.SelectToken("value").ToString.Split("|").GetValue(2).ToString]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[&quot;http://localhost:8080/api/v1/interviewers/&quot;+interviewerId]" sap:VirtualizedContainerService.HintSize="910,70" sap2010:WorkflowViewState.IdRef="HttpClient_3" Method="GET" Result="[interviewerRes]" TimeoutMS="6000">
+                        <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[&quot;http://64.176.80.209:8080/api/v1/interviewers/&quot;+interviewerId]" sap:VirtualizedContainerService.HintSize="910,70" sap2010:WorkflowViewState.IdRef="HttpClient_3" Method="GET" Result="[interviewerRes]" TimeoutMS="6000">
                           <ui:HttpClient.Attachments>
                             <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                           </ui:HttpClient.Attachments>
@@ -555,7 +565,7 @@
                                           <InArgument x:TypeArguments="x:String">[Convert.ToBase64String(fileBytes)]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://api.affinda.com/v3/documents" sap:VirtualizedContainerService.HintSize="738,70" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" OAuth2Token="e1a5a096813aef8fa06073fbf45bc70b1aa63d5e" Result="[cvResponse]" TimeoutMS="60000">
+                                      <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://api.affinda.com/v3/documents" sap:VirtualizedContainerService.HintSize="738,70" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" OAuth2Token="2fc6327ea632d4231d4bd0f17297c7ecff09d269" Result="[cvResponse]" TimeoutMS="60000">
                                         <ui:HttpClient.Attachments>
                                           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                                         </ui:HttpClient.Attachments>
@@ -568,7 +578,7 @@
                                         <ui:HttpClient.Parameters>
                                           <InArgument x:TypeArguments="x:String" x:Key="wait">true</InArgument>
                                           <InArgument x:TypeArguments="x:String" x:Key="rejectDuplicates">false</InArgument>
-                                          <InArgument x:TypeArguments="x:String" x:Key="workspace">vLKKUbHH</InArgument>
+                                          <InArgument x:TypeArguments="x:String" x:Key="workspace">YWjvqepN</InArgument>
                                           <InArgument x:TypeArguments="x:String" x:Key="file">[fileBase64]</InArgument>
                                         </ui:HttpClient.Parameters>
                                         <ui:HttpClient.UrlSegments>
@@ -970,7 +980,7 @@
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[&quot;Dear &quot;+interviewerName_parsed+&quot;,&#xD;&#xA;&#x9;This is list of candidate CV.&#xD;&#xA;&#x9;Let me know if these CV is good or not.&#xD;&#xA;&#x9;You should rate 1 of 2 values ​​as pass or fail&#xD;&#xA;&#x9;Please response to this email with subject: VNG_&lt;JOB_ID&gt;_REVIEW&#xD;&#xA;Thank you &amp; Best Regards,&#xD;&#xA;&quot;]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,396" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="[jobId_parsed+&quot;_REVIEW&quot;]" To="[interviewerMail_parsed]" UseDocumentAsBody="False">
+                                    <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[&quot;Dear &quot;+interviewerName_parsed+&quot;,&#xA;&#x9;This is list of candidate CV.&#xA;&#x9;Let me know if these CV is good or not.&#xA;&#x9;You should rate 1 of 2 values ​​as pass or fail&#xA;&#x9;Please response to this email with subject: VNG_&lt;JOB_ID&gt;_REVIEW&#xA;Thank you &amp; Best Regards,&#xA;&quot;]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,396" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="[jobId_parsed+&quot;_REVIEW&quot;]" To="[interviewerMail_parsed]" UseDocumentAsBody="False">
                                       <umab:SendMailX.Files>
                                         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
                                           <InArgument x:TypeArguments="x:String">["C:\Users\DELL\Downloads\HR_Assistant_Files\"+jobId_parsed+".csv"]</InArgument>
@@ -1011,15 +1021,15 @@
                             </Sequence>
                           </If.Else>
                         </If>
-                        <If Condition="[isInterviewerMail]" sap:VirtualizedContainerService.HintSize="910,8743" sap2010:WorkflowViewState.IdRef="If_30">
+                        <If Condition="[isInterviewerMail]" sap:VirtualizedContainerService.HintSize="910,9095" sap2010:WorkflowViewState.IdRef="If_30">
                           <If.Then>
-                            <Sequence sap:VirtualizedContainerService.HintSize="876,8481" sap2010:WorkflowViewState.IdRef="Sequence_126">
+                            <Sequence sap:VirtualizedContainerService.HintSize="876,8833" sap2010:WorkflowViewState.IdRef="Sequence_126">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[folder_job_reivew]" sap:VirtualizedContainerService.HintSize="834,8393" sap2010:WorkflowViewState.IdRef="ForEachFileX_10" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+                              <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[folder_job_reivew]" sap:VirtualizedContainerService.HintSize="834,8745" sap2010:WorkflowViewState.IdRef="ForEachFileX_10" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
                                 <ui:ForEachFileX.Body>
                                   <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                                     <ActivityAction.Argument1>
@@ -1028,7 +1038,7 @@
                                     <ActivityAction.Argument2>
                                       <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                                     </ActivityAction.Argument2>
-                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="800,8141" sap2010:WorkflowViewState.IdRef="Sequence_75">
+                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="800,8493" sap2010:WorkflowViewState.IdRef="Sequence_75">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1045,13 +1055,13 @@
                                         </Assign.Value>
                                       </Assign>
                                       <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="738,60" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_10" JsonArray="[review_list_parsed]" JsonString="[review_list_string]" />
-                                      <ui:ForEach x:TypeArguments="njl:JToken" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="738,7268" sap2010:WorkflowViewState.IdRef="ForEach`1_21" Values="[review_list_parsed]">
+                                      <ui:ForEach x:TypeArguments="njl:JToken" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="738,7620" sap2010:WorkflowViewState.IdRef="ForEach`1_21" Values="[review_list_parsed]">
                                         <ui:ForEach.Body>
                                           <ActivityAction x:TypeArguments="njl:JToken">
                                             <ActivityAction.Argument>
                                               <DelegateInArgument x:TypeArguments="njl:JToken" Name="review" />
                                             </ActivityAction.Argument>
-                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="704,7082" sap2010:WorkflowViewState.IdRef="Sequence_121">
+                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="704,7434" sap2010:WorkflowViewState.IdRef="Sequence_121">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1097,9 +1107,9 @@
                                                   <InArgument x:TypeArguments="x:String">[review.SelectToken("location").ToString]</InArgument>
                                                 </Assign.Value>
                                               </Assign>
-                                              <If Condition="[candidate_review_status.ToLower.Equals(&quot;pass&quot;) = true OR candidate_review_status.ToLower.Equals(&quot;passed&quot;) = true]" sap:VirtualizedContainerService.HintSize="662,6384" sap2010:WorkflowViewState.IdRef="If_25">
+                                              <If Condition="[candidate_review_status.ToLower.Equals(&quot;pass&quot;) = true OR candidate_review_status.ToLower.Equals(&quot;passed&quot;) = true]" sap:VirtualizedContainerService.HintSize="662,6736" sap2010:WorkflowViewState.IdRef="If_25">
                                                 <If.Then>
-                                                  <Sequence sap:VirtualizedContainerService.HintSize="628,5396" sap2010:WorkflowViewState.IdRef="Sequence_117">
+                                                  <Sequence sap:VirtualizedContainerService.HintSize="628,5748" sap2010:WorkflowViewState.IdRef="Sequence_117">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1196,9 +1206,9 @@
                                                         <InArgument x:TypeArguments="njl:JObject">[new JObject()]</InArgument>
                                                       </Assign.Value>
                                                     </Assign>
-                                                    <If Condition="[isCandidateExists]" sap:VirtualizedContainerService.HintSize="586,3666" sap2010:WorkflowViewState.IdRef="If_27">
+                                                    <If Condition="[isCandidateExists]" sap:VirtualizedContainerService.HintSize="586,4018" sap2010:WorkflowViewState.IdRef="If_27">
                                                       <If.Then>
-                                                        <Sequence sap:VirtualizedContainerService.HintSize="300,1742" sap2010:WorkflowViewState.IdRef="Sequence_115">
+                                                        <Sequence sap:VirtualizedContainerService.HintSize="300,1918" sap2010:WorkflowViewState.IdRef="Sequence_115">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1253,6 +1263,13 @@
                                                             <InArgument x:TypeArguments="x:String">hrId</InArgument>
                                                             <InArgument x:TypeArguments="njl:JToken">[hrId]</InArgument>
                                                           </InvokeMethod>
+                                                          <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="258,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_32" MethodName="Add">
+                                                            <InvokeMethod.TargetObject>
+                                                              <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
+                                                            </InvokeMethod.TargetObject>
+                                                            <InArgument x:TypeArguments="x:String">jobId</InArgument>
+                                                            <InArgument x:TypeArguments="njl:JToken">[candidateJobId]</InArgument>
+                                                          </InvokeMethod>
                                                           <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="258,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_28" MethodName="Add">
                                                             <InvokeMethod.TargetObject>
                                                               <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
@@ -1267,7 +1284,7 @@
                                                             <InArgument x:TypeArguments="x:String">roundInterview</InArgument>
                                                             <InArgument x:TypeArguments="njl:JToken">[0]</InArgument>
                                                           </InvokeMethod>
-                                                          <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[candidateCreate.ToString]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[&quot;http://localhost:8080/api/v1/candidates/&quot;+candidateStoreId]" sap:VirtualizedContainerService.HintSize="258,70" sap2010:WorkflowViewState.IdRef="HttpClient_7" Method="PUT" TimeoutMS="6000">
+                                                          <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[candidateCreate.ToString]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[&quot;http://64.176.80.209:8080/api/v1/candidates/&quot;+candidateStoreId]" sap:VirtualizedContainerService.HintSize="258,70" sap2010:WorkflowViewState.IdRef="HttpClient_7" Method="PUT" TimeoutMS="6000">
                                                             <ui:HttpClient.Attachments>
                                                               <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                                                             </ui:HttpClient.Attachments>
@@ -1287,7 +1304,7 @@
                                                         </Sequence>
                                                       </If.Then>
                                                       <If.Else>
-                                                        <Sequence sap:VirtualizedContainerService.HintSize="300,1742" sap2010:WorkflowViewState.IdRef="Sequence_116">
+                                                        <Sequence sap:VirtualizedContainerService.HintSize="300,1918" sap2010:WorkflowViewState.IdRef="Sequence_116">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1342,6 +1359,13 @@
                                                             <InArgument x:TypeArguments="x:String">hrId</InArgument>
                                                             <InArgument x:TypeArguments="njl:JToken">[hrId]</InArgument>
                                                           </InvokeMethod>
+                                                          <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="258,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_33" MethodName="Add">
+                                                            <InvokeMethod.TargetObject>
+                                                              <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
+                                                            </InvokeMethod.TargetObject>
+                                                            <InArgument x:TypeArguments="x:String">jobId</InArgument>
+                                                            <InArgument x:TypeArguments="njl:JToken">[candidateJobId]</InArgument>
+                                                          </InvokeMethod>
                                                           <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="258,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_20" MethodName="Add">
                                                             <InvokeMethod.TargetObject>
                                                               <InArgument x:TypeArguments="njl:JObject">[candidateCreate]</InArgument>
@@ -1356,7 +1380,7 @@
                                                             <InArgument x:TypeArguments="x:String">roundInterview</InArgument>
                                                             <InArgument x:TypeArguments="njl:JToken">[0]</InArgument>
                                                           </InvokeMethod>
-                                                          <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[candidateCreate.ToString]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="http://localhost:8080/api/v1/candidates" sap:VirtualizedContainerService.HintSize="258,70" sap2010:WorkflowViewState.IdRef="HttpClient_8" Method="POST" TimeoutMS="6000">
+                                                          <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[candidateCreate.ToString]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="http://64.176.80.209:8080/api/v1/candidates" sap:VirtualizedContainerService.HintSize="258,70" sap2010:WorkflowViewState.IdRef="HttpClient_8" Method="POST" TimeoutMS="6000">
                                                             <ui:HttpClient.Attachments>
                                                               <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                                                             </ui:HttpClient.Attachments>
@@ -1496,7 +1520,7 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="http://localhost:8080/api/v1/jobs" sap:VirtualizedContainerService.HintSize="510,70" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="GET" Result="[taskRes]" TimeoutMS="6000">
+        <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="http://64.176.80.209:8080/api/v1/jobs" sap:VirtualizedContainerService.HintSize="510,70" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="GET" Result="[taskRes]" TimeoutMS="6000">
           <ui:HttpClient.Attachments>
             <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
           </ui:HttpClient.Attachments>
@@ -1525,13 +1549,13 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:DeserializeJsonArray>
-        <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="510,1372" sap2010:WorkflowViewState.IdRef="ForEach`1_18" Values="[taskResArr]">
+        <ui:ForEach x:TypeArguments="njl:JToken" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="510,1497" sap2010:WorkflowViewState.IdRef="ForEach`1_18" Values="[taskResArr]">
           <ui:ForEach.Body>
             <ActivityAction x:TypeArguments="njl:JToken">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="njl:JToken" Name="task" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,1186" sap2010:WorkflowViewState.IdRef="Sequence_101">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,1311" sap2010:WorkflowViewState.IdRef="Sequence_101">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1561,7 +1585,7 @@
                     <InArgument x:TypeArguments="x:String">[task.SelectToken("interviewerId").ToString]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_81">
+                <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_81">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[taskHrId]</OutArgument>
                   </Assign.To>
@@ -1569,7 +1593,15 @@
                     <InArgument x:TypeArguments="x:String">[task.SelectToken("hrId").ToString]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_122">
+                <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_125">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[taskId]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[task.SelectToken("id").ToString]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_122">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[taskJobTitle]</OutArgument>
                   </Assign.To>
@@ -1589,7 +1621,7 @@
                     <InArgument x:TypeArguments="njl:JObject">[taskObj]</InArgument>
                   </InvokeMethod.TargetObject>
                   <InArgument x:TypeArguments="x:String">value</InArgument>
-                  <InArgument x:TypeArguments="njl:JToken">[taskInterviewerId+"|"+taskHrId+"|"+taskJobTitle]</InArgument>
+                  <InArgument x:TypeArguments="njl:JToken">[taskInterviewerId+"|"+taskHrId+"|"+taskJobTitle+"|"+taskId]</InArgument>
                 </InvokeMethod>
                 <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="434,136" sap2010:WorkflowViewState.IdRef="InvokeMethod_10" MethodName="Add">
                   <InvokeMethod.TargetObject>
@@ -1617,7 +1649,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="http://localhost:8080/api/v1/candidates" sap:VirtualizedContainerService.HintSize="510,70" sap2010:WorkflowViewState.IdRef="HttpClient_6" Method="GET" Result="[candidateRes]" TimeoutMS="6000">
+            <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="http://64.176.80.209:8080/api/v1/candidates" sap:VirtualizedContainerService.HintSize="510,70" sap2010:WorkflowViewState.IdRef="HttpClient_6" Method="GET" Result="[candidateRes]" TimeoutMS="6000">
               <ui:HttpClient.Attachments>
                 <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
               </ui:HttpClient.Attachments>

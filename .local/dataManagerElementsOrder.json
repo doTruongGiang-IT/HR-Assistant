@@ -132,6 +132,9 @@
       "Path": "ProcessCV.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "jobId&Flowchart_1",
+        "taskId&Flowchart_1",
+        "candidateSchoolsJO&Sequence_23",
         "jobTitle&Flowchart_1",
         "taskJobTitle&Flowchart_1",
         "selectedCv&Flowchart_1",
@@ -206,6 +209,13 @@
       "Path": "SendInterviewSchedule.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "listInterviewerIdParsed&Flowchart_1",
+        "jobResObj&Flowchart_1",
+        "jobRes&Flowchart_1",
+        "candidateJobId&Flowchart_1",
+        "candidate_job_id&Sequence_10",
+        "candidateRoundParsed&Flowchart_1",
+        "candidate_round_interview&Sequence_10",
         "candidateTitle&Flowchart_1",
         "candidate_title&Sequence_10",
         "devMailAndCandidateMail&Flowchart_1",
@@ -402,6 +412,8 @@
       "Path": "ScreeningCV.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "candidateJobId&Flowchart_1",
+        "taskId&Flowchart_1",
         "interviewerName_parsed&Flowchart_1",
         "jobTitle&Flowchart_1",
         "taskJobTitle&Flowchart_1",

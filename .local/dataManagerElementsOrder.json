@@ -412,11 +412,6 @@
       "Path": "ScreeningCV.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "candidateJobId&Flowchart_1",
-        "taskId&Flowchart_1",
-        "interviewerName_parsed&Flowchart_1",
-        "jobTitle&Flowchart_1",
-        "taskJobTitle&Flowchart_1",
         "subjectRegexForCandidate&Flowchart_1",
         "mailList&Flowchart_1",
         "job_list&Flowchart_1",
@@ -489,6 +484,11 @@
         "technology_name_length&Flowchart_1",
         "countTech&Flowchart_1",
         "technology_name_parsed&Flowchart_1",
+        "taskJobTitle&Flowchart_1",
+        "jobTitle&Flowchart_1",
+        "interviewerName_parsed&Flowchart_1",
+        "taskId&Flowchart_1",
+        "candidateJobId&Flowchart_1",
         "candidateObjStatus&Sequence_108",
         "configFormJson&Sequence_43"
       ],

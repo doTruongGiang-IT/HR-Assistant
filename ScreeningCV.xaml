@@ -378,7 +378,7 @@
                             <InArgument x:TypeArguments="x:String">[task.SelectToken("value").ToString.Split("|").GetValue(2).ToString]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[&quot;http://64.176.80.209:8080/api/v1/interviewers/&quot;+interviewerId]" sap:VirtualizedContainerService.HintSize="910,70" sap2010:WorkflowViewState.IdRef="HttpClient_3" Method="GET" Result="[interviewerRes]" TimeoutMS="6000">
+                        <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[&quot;http://localhost:8080/api/v1/interviewers/&quot;+interviewerId]" sap:VirtualizedContainerService.HintSize="910,70" sap2010:WorkflowViewState.IdRef="HttpClient_3" Method="GET" Result="[interviewerRes]" TimeoutMS="6000">
                           <ui:HttpClient.Attachments>
                             <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                           </ui:HttpClient.Attachments>
@@ -565,7 +565,7 @@
                                           <InArgument x:TypeArguments="x:String">[Convert.ToBase64String(fileBytes)]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://api.affinda.com/v3/documents" sap:VirtualizedContainerService.HintSize="738,70" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" OAuth2Token="2fc6327ea632d4231d4bd0f17297c7ecff09d269" Result="[cvResponse]" TimeoutMS="60000">
+                                      <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://api.affinda.com/v3/documents" sap:VirtualizedContainerService.HintSize="738,70" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" OAuth2Token="aff_1d3d928d876a139d3da3777e9348a101d6b5d361" Result="[cvResponse]" TimeoutMS="60000">
                                         <ui:HttpClient.Attachments>
                                           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                                         </ui:HttpClient.Attachments>
@@ -578,7 +578,7 @@
                                         <ui:HttpClient.Parameters>
                                           <InArgument x:TypeArguments="x:String" x:Key="wait">true</InArgument>
                                           <InArgument x:TypeArguments="x:String" x:Key="rejectDuplicates">false</InArgument>
-                                          <InArgument x:TypeArguments="x:String" x:Key="workspace">YWjvqepN</InArgument>
+                                          <InArgument x:TypeArguments="x:String" x:Key="workspace">pOQUKZEF</InArgument>
                                           <InArgument x:TypeArguments="x:String" x:Key="file">[fileBase64]</InArgument>
                                         </ui:HttpClient.Parameters>
                                         <ui:HttpClient.UrlSegments>
@@ -597,7 +597,7 @@
                                           <OutArgument x:TypeArguments="x:String">[candidateName]</OutArgument>
                                         </Assign.To>
                                         <Assign.Value>
-                                          <InArgument x:TypeArguments="x:String">[cvParsed.SelectToken("data.name.raw").ToString]</InArgument>
+                                          <InArgument x:TypeArguments="x:String">[If(String.IsNullOrEmpty(cvParsed.SelectToken("data.name").ToString) Or String.IsNullOrEmpty(cvParsed.SelectToken("data.name.raw").ToString), "", cvParsed.SelectToken("data.name.raw").ToString)]</InArgument>
                                         </Assign.Value>
                                       </Assign>
                                       <Assign sap:VirtualizedContainerService.HintSize="738,82" sap2010:WorkflowViewState.IdRef="Assign_15">
@@ -605,7 +605,7 @@
                                           <OutArgument x:TypeArguments="x:String">[candidateMail]</OutArgument>
                                         </Assign.To>
                                         <Assign.Value>
-                                          <InArgument x:TypeArguments="x:String">[cvParsed.SelectToken("data.emails").First.ToString]</InArgument>
+                                          <InArgument x:TypeArguments="x:String">[If(String.IsNullOrEmpty(cvParsed.SelectToken("data.emails").ToString), "", cvParsed.SelectToken("data.emails").First.ToString)]</InArgument>
                                         </Assign.Value>
                                       </Assign>
                                       <Assign sap:VirtualizedContainerService.HintSize="738,82" sap2010:WorkflowViewState.IdRef="Assign_16">
@@ -613,7 +613,7 @@
                                           <OutArgument x:TypeArguments="x:String">[candidatePhone]</OutArgument>
                                         </Assign.To>
                                         <Assign.Value>
-                                          <InArgument x:TypeArguments="x:String">[cvParsed.SelectToken("data.phoneNumbers").First.ToString]</InArgument>
+                                          <InArgument x:TypeArguments="x:String">[If(String.IsNullOrEmpty(cvParsed.SelectToken("data.phoneNumbers").ToString), "", cvParsed.SelectToken("data.phoneNumbers").First.ToString)]</InArgument>
                                         </Assign.Value>
                                       </Assign>
                                       <ui:DeserializeJson x:TypeArguments="njl:JArray" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="738,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[candidateSkills]" JsonString="[cvParsed.SelectToken(&quot;data.skills&quot;).ToString]" />
@@ -1284,7 +1284,7 @@
                                                             <InArgument x:TypeArguments="x:String">roundInterview</InArgument>
                                                             <InArgument x:TypeArguments="njl:JToken">[0]</InArgument>
                                                           </InvokeMethod>
-                                                          <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[candidateCreate.ToString]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[&quot;http://64.176.80.209:8080/api/v1/candidates/&quot;+candidateStoreId]" sap:VirtualizedContainerService.HintSize="258,70" sap2010:WorkflowViewState.IdRef="HttpClient_7" Method="PUT" TimeoutMS="6000">
+                                                          <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[candidateCreate.ToString]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[&quot;http://localhost:8080/api/v1/candidates/&quot;+candidateStoreId]" sap:VirtualizedContainerService.HintSize="258,70" sap2010:WorkflowViewState.IdRef="HttpClient_7" Method="PUT" TimeoutMS="6000">
                                                             <ui:HttpClient.Attachments>
                                                               <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                                                             </ui:HttpClient.Attachments>
@@ -1380,7 +1380,7 @@
                                                             <InArgument x:TypeArguments="x:String">roundInterview</InArgument>
                                                             <InArgument x:TypeArguments="njl:JToken">[0]</InArgument>
                                                           </InvokeMethod>
-                                                          <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[candidateCreate.ToString]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="http://64.176.80.209:8080/api/v1/candidates" sap:VirtualizedContainerService.HintSize="258,70" sap2010:WorkflowViewState.IdRef="HttpClient_8" Method="POST" TimeoutMS="6000">
+                                                          <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[candidateCreate.ToString]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="http://localhost:8080/api/v1/candidates" sap:VirtualizedContainerService.HintSize="258,70" sap2010:WorkflowViewState.IdRef="HttpClient_8" Method="POST" TimeoutMS="6000">
                                                             <ui:HttpClient.Attachments>
                                                               <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                                                             </ui:HttpClient.Attachments>
@@ -1520,7 +1520,7 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="http://64.176.80.209:8080/api/v1/jobs" sap:VirtualizedContainerService.HintSize="510,70" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="GET" Result="[taskRes]" TimeoutMS="6000">
+        <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="http://localhost:8080/api/v1/jobs" sap:VirtualizedContainerService.HintSize="510,70" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="GET" Result="[taskRes]" TimeoutMS="6000">
           <ui:HttpClient.Attachments>
             <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
           </ui:HttpClient.Attachments>
@@ -1649,7 +1649,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="http://64.176.80.209:8080/api/v1/candidates" sap:VirtualizedContainerService.HintSize="510,70" sap2010:WorkflowViewState.IdRef="HttpClient_6" Method="GET" Result="[candidateRes]" TimeoutMS="6000">
+            <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="http://localhost:8080/api/v1/candidates" sap:VirtualizedContainerService.HintSize="510,70" sap2010:WorkflowViewState.IdRef="HttpClient_6" Method="GET" Result="[candidateRes]" TimeoutMS="6000">
               <ui:HttpClient.Attachments>
                 <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
               </ui:HttpClient.Attachments>
